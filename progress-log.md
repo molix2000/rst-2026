@@ -236,3 +236,6 @@ let guess: u32 = match guess.trim().parse() {
     }
 };
 ```
+
+##### Using rustfmt: </p>
+This command is very helpful in detecting missing clauses and helping if the code indentation is very bad.
