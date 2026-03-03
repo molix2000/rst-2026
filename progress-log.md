@@ -218,3 +218,21 @@ try!(file.read_to_string(&mut buf).context(fname));
 try!(buf.parse().context(fname))
 
 ```
+
+###### Making an error more defined:</p>
+
+Whilst capturing an error in a catch all way with code below might be easy :</p>
+```
+Err(_) => continue, 
+```
+It would hide the exact error in more complex cases. Its still best to be more precise:
+
+```
+let guess: u32 = match guess.trim().parse() {
+    Ok(num) => num,
+    Err(e) => {
+        println!("Failed to parse input: {e}");
+        return;
+    }
+};
+```
