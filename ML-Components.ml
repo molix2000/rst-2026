@@ -8,3 +8,11 @@ Below is a good article on how to design a component in Rust:</p>
 https://tiberiusferreira.github.io/blog/posts/designing_autograd_system_rust_first_steps/
 https://rufflewind.com/2016-12-30/reverse-mode-automatic-differentiation
 https://github.com/ibab/rust-ad.git
+
+Some other sources:</p>
+* arrayfire-rust</p>
+* Autogard-Experiments</p>
+* cargo-mutants</p>
+* rust-autogard</p>
+* wyrm</p>
+* RustaCuda</p>
