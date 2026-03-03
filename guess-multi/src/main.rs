@@ -33,5 +33,6 @@ fn main() {
       Ordering::Equal => {
          println!("This is correct and matching");
          break;
+      }   
    }    
 }
