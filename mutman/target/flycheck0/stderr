@@ -1,0 +1,104 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.053900013s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: false }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
+   0.053951458s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-f56ef71358d5ba9a/bin-mutman`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace_rs::backtrace::libunwind::trace
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/../../backtrace/src/backtrace/libunwind.rs:117:9
+   1: std::backtrace_rs::backtrace::trace_unsynchronized
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/../../backtrace/src/backtrace/mod.rs:66:14
+   2: std::backtrace::Backtrace::create
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/backtrace.rs:331:13
+   3: cargo_util::paths::read_bytes
+   4: cargo_util::paths::read
+   5: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   6: cargo::core::compiler::fingerprint::prepare_target
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  26: main
+  27: <unknown>
+  28: __libc_start_main
+  29: <unknown>
+   0.082591121s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: true }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
+   0.082639788s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-9a6ced408652349d/test-bin-mutman`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace_rs::backtrace::libunwind::trace
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/../../backtrace/src/backtrace/libunwind.rs:117:9
+   1: std::backtrace_rs::backtrace::trace_unsynchronized
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/../../backtrace/src/backtrace/mod.rs:66:14
+   2: std::backtrace::Backtrace::create
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/backtrace.rs:331:13
+   3: cargo_util::paths::read_bytes
+   4: cargo_util::paths::read
+   5: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   6: cargo::core::compiler::fingerprint::prepare_target
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  26: main
+  27: <unknown>
+  28: __libc_start_main
+  29: <unknown>
+    Checking mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)
+error: could not compile `mutman` (bin "mutman" test) due to 2 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `mutman` (bin "mutman") due to 2 previous errors

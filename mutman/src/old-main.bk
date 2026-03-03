@@ -1,0 +1,8 @@
+
+fn main() {
+    println!("Check Mutable VS Immutable !");
+    let mut statementz = String::from("GreenBlue");
+    println!("And the statementz is {statementz}");
+    let mut statementz = String::from("GreenRed");
+    println!("And the statementz is {statementz}");
+}
