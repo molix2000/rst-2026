@@ -350,3 +350,15 @@ fn main() {
 
 
 ```
+
+Example D: :</p>
+One liner solution for a position:</p>
+
+```
+let a = [1, 2 ,3 ,4 ,5];
+    for index in 0..A_LENGHT {
+        println!("The index is {} value is {}",index,a[4]);
+    }
+    
+    println!("the 4th positioin on A is, {}",a[4]);
+```
