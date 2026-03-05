@@ -292,3 +292,18 @@ The chain can continue this way for an indefinite number of iterations.
 
 ```
 
+* Shadowing different types ia possible too:</p>
+  ```
+    println!("Chapter 3, Shadowing");
+    let spaces = "    ";
+    println!("spaces 1st is , {spaces}");
+    let spaces = spaces.len();
+    println!("Spaces len is , {spaces}");
+    let mut spaces = " ";
+    println!("Spaces 2nd is , {spaces}");
+    let spaces = spaces.len(); 
+    println!("spaces 2nd length is {spaces}");
+
+
+  ```
+
