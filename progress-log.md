@@ -362,3 +362,29 @@ let a = [1, 2 ,3 ,4 ,5];
     
     println!("the 4th positioin on A is, {}",a[4]);
 ```
+
+Example E:</p>
+
+```
+println!("Vector Type primitives");
+
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x,y,z) = tup;
+    println!("tup x is {x}, up y is {y}, tup z is , {z}");
+    const A_LENGHT:usize = 5;
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundered = x.0;
+    let six_point_four = x.1;
+    let one = x.2;
+    println!("One is , {one}");
+    println!("five_hundered is, {five_hundered}");
+    println!("six_point_four is, {six_point_four}"); 
+    let a = [1, 2 ,3 ,4 ,5];
+    for index in 0..A_LENGHT {
+        println!("The index is {} value is {}",index,a[index]);
+    }
+    
+    println!("the 4th positioin on A is, {}",a[4]);
+
+
+```
