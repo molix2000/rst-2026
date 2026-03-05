@@ -303,7 +303,7 @@ The chain can continue this way for an indefinite number of iterations.
     println!("Spaces 2nd is , {spaces}");
     let spaces = spaces.len(); 
     println!("spaces 2nd length is {spaces}");
-
+    let guess: u32 = "44".parse.expect("There is an error getting the number");
 
   ```
 ##### Note using mut is not allowed and can result in errors.</p>
