@@ -239,3 +239,56 @@ let guess: u32 = match guess.trim().parse() {
 
 ##### Using rustfmt: </p>
 This command is very helpful in detecting missing clauses and helping if the code indentation is very bad.
+
+
+##### Shadowing:</p>
+In this topic several points were derived.</p>
+* 1st time declaring has to be linked to let +mut, for intended different un related value.</p> 
+
+The 2nd occurance would need let only.</p>
+
+The chain can continue this way for an indefinite number of iterations.
+```
+    fn main() {
+    
+    
+    println!("Chapter 3");
+    println!("Shadowing");
+    let mut x = 5;
+    println!("The value of X is {x}");
+     x = 7;
+    println!("The value of x this time shadowed is {x}");
+    println!("The mut allow shadows");
+    let mut y = 44;
+    println!("The Y value is , {y}");
+    let mut y = println!("This is y shadowed {y}");
+    let mut y = 55;
+    println!("The shadowed Y for the 3rd time is {y}");
+    let mut y = 68;
+    println!("Y shadowed 4th time is {y}");
+    let y = 80;
+    println!("Y shadowed for the 5th time is {y}");
+
+    println!("Constants must be in capital");
+    const IN_SECONDS: u32 = 60 * 60 * 30;
+    const TITLE: &str = "This is chapter 3";
+    println!("This is 3 hours,{IN_SECONDS}");
+    println!("Sigma is , {TITLE}");
+
+```
+
+
+* For shadowing values that are partially part of the previous one, you don't need the mut part.</p>
+
+```
+  fn main() {
+    let x =5; //will appear 1st time then shadowed  allways
+    let x = x + 1;  // this will prevail now
+     {
+        let x = x * 2; // would only live here
+     }
+      println!("x is {x}"); // This would be 6
+  }
+
+```
+
