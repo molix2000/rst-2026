@@ -307,3 +307,46 @@ The chain can continue this way for an indefinite number of iterations.
 
   ```
 ##### Note using mut is not allowed and can result in errors.</p>
+
+
+##### Vectors:</p>
+
+Array position printing:</p>
+Example A:</p>
+```
+   let array = [10, 20, 30];
+       for (i, val) in array.iter().enumerate() {
+        println!("array[{i}] = {val}");
+       }
+
+```
+Example B: </p>
+```
+ fn main() {
+    let array = [10, 20, 30, 40];
+
+    for i in 0..array.len() {
+        println!("Index {}: Value {}", i, array[i]);
+    }
+}
+
+```
+Example C: </p>
+
+```
+fn main() {
+    let array = ['a', 'b', 'c', 'd'];
+
+    // enumerate() provides (index, &value)
+    for (index, value) in array.iter().enumerate() {
+        println!("Position {}: {}", index, value);
+    }
+}
+// Output:
+// Position 0: a
+// Position 1: b
+// Position 2: c
+// Position 3: d
+
+
+```
