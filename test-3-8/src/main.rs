@@ -9,7 +9,10 @@ fn main() {
     io::stdin().read_line(&mut index).expect("This is wrong type of input");
     
     let index: usize = index.trim().parse().expect("This is the wrong type of input");
-
+    if index >= a.len() {
+        println!("Index out of bounds");
+        return;
+    }
     let element = a[index];
     println!(" The value of element at index {index} , element {element}");
     
