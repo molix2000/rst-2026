@@ -15,5 +15,9 @@ fn main() {
     }
     let element = a[index];
     println!(" The value of element at index {index} , element {element}");
-    
+
+    let mut x1 = String::from("Triumph400X");
+    let r1 = &mut x1;
+     r1.insert_str(0, "The");
+    println!("The value of r1 is {r1}");
 }
