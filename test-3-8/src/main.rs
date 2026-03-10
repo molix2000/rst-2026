@@ -16,6 +16,4 @@ fn main() {
     let element = a[index];
     println!(" The value of element at index {index} , element {element}");
     
-    let mut b = New::array();
-    println!("Array: {0:?}", b);
 }
