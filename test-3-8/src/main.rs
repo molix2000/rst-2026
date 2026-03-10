@@ -8,7 +8,7 @@ fn main() {
     let mut index = String::new();
     io::stdin().read_line(&mut index).expect(This is wrong type of input");
     
-    let index: usize = index.trim().parse.expect("This is the wrong type of input");
+    let index: usize = index.trim().parse().expect("This is the wrong type of input");
 
     let element = a[index];
     println!(" The value of element at index {index} , element {element}", index,element);
