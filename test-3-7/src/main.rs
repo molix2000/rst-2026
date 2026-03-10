@@ -1,12 +1,16 @@
-fn main() {
-    println!("Boolean values!");
-    let t = true;
-    let f: bool = false;
-    println!("t is {} , f is {}", t, f);
-    let c = 'c';
-    let z: char = 'z';
-    println!("The c is{}, the z is {}", c, z);
-    let tupo = (560, 7.3, 7);
-    let (x, y, z) = tupo;
-    println!("so the value of x is{}, y is {}, z is {}", x, y, z);
-}
+use std::io;
+fn main(){
+
+
+    let a  = [1,2,3,4,5];
+    for i in 0..5 {
+        println!("This is the position value, {}!",a[i]);
+    }
+    println!(" This is the 1st position value, {}!", a[0]);  
+
+    let mut index = String::new();
+    io::stdin().read_line(&mut index).expect("Failed in taking input");
+    let index: usize = index.trim().parse().expect("The index shoul be a number");
+    let element = a [index];
+    println!("the element at index {} is {}", index, element);
+} 
