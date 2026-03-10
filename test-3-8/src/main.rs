@@ -6,7 +6,7 @@ fn main() {
     println!("Array: {:?}", a);
     println!("Please enter an array index");
     let mut index = String::new();
-    io::stdin().red_line(&mut index).expect(This is wrong type of input");
+    io::stdin().read_line(&mut index).expect(This is wrong type of input");
     
     let index: usize = index.trim().parse.expect("This is the wrong type of input");
 
