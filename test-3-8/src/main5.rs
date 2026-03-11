@@ -1,6 +1,5 @@
 use std::io;
 fn main () {
-
    println!("String manupulation");
    let mut a = [1,2,3,4,5];
    let mut index = String::new();
