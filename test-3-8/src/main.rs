@@ -1,34 +1,21 @@
-use std::cmp::Ordering;
 use std::io;
-
 use rand::Rng;
+use std::cmp::Ordering;
 
 fn main() {
-    println!("This is an ordering example");
-    println!("Guess a number");
-    let secret_number = rand::thread_rng().gen_range(1..=100);
 
-    loop {
-        println!("Please input a number");
-        let mut guess = String::new();
+   let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
+   println!("The secert_number is {}",secret_number);
 
-        io::stdin()
-            .read_line(&mut guess)
-            .expect("The input value was at error");
+   println!("Creating the user guess input");
+   let mut guess: String = String::new();
+   io::stdin().read_line(&mut guess).expect("This input was an error");
 
-        let guess: u32 = match guess.trim().parse() {
-            Ok(num) => num,
-            Err(_) => continue,
-        };
-
-        println!("You guessed: {guess}");
-        match guess.cmp(&secret_number) {
-            Ordering::Less => println!("This is less"),
-            Ordering::Greater => println!("This is more"),
-            Ordering::Equal => {
-                println!("This is correct");
-                break;
-            }
-        }
-    }
-}
+   println!("The vlue of Guess is {}",guess);
+   let guess: u32 = guess.trim().parse().expect("thi input was not a numer");
+   match guess.cmp(&secret_number) {
+         Ordering::Greater => println!("Too big"),
+         Ordering::Less => prinln!("this is too small"),
+         Ordering::Equal => println!("This was just right!"),
+   }
+}  
