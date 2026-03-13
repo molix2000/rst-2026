@@ -2,7 +2,23 @@
 
 This is rst project 01 progress steps, log, system setup for deployment, (CICD/Devops), Functional programming and ML related aspect for 2026.
 
+## Embedding graphs:</p>
+ One of the key components of any project or code related work is how to clearly represent the flow or the idea tha one is thriving to achieve. </p> Here I always prefer the diagrams as a better way to represent a complex idea. </p> This is most likely be in software. Here are the rules to embed mermaid flow chart:</p>
 
+
+ ```
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+
+ ```
 
 ## Matching:</p>
 
