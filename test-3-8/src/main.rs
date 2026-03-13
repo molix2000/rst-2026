@@ -1,23 +1,34 @@
+use std::cmp::Ordering;
 use std::io;
 
-fn main() {
-    println!("String manipulation in Rust!");
-    let a = [1,2,3,4,5];
-    println!("Array: {0:?}", a);
-    println!("Please enter an array index");
-    let mut index = String::new();
-    io::stdin().read_line(&mut index).expect("This is wrong type of input");
-    
-    let index: usize = index.trim().parse().expect("This is the wrong type of input");
-    if index >= a.len() {
-        println!("Index out of bounds");
-        return;
-    }
-    let element = a[index];
-    println!(" The value of element at index {index} , element {element}");
+use rand::Rng;
 
-    let mut x1 = String::from("Triumph400X");
-    let r1 = &mut x1;
-     r1.insert_str(0, "The");
-    println!("The value of r1 is {r1}");
+fn main() {
+    println!("This is an ordering example");
+    println!("Guess a number");
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+
+    loop {
+        println!("Please input a number");
+        let mut guess = String::new();
+
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("The input value was at error");
+
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
+
+        println!("You guessed: {guess}");
+        match guess.cmp(&secret_number) {
+            Ordering::Less => println!("This is less"),
+            Ordering::Greater => println!("This is more"),
+            Ordering::Equal => {
+                println!("This is correct");
+                break;
+            }
+        }
+    }
 }
