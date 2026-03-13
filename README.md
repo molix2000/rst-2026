@@ -9,8 +9,8 @@ This is rst project 01 progress steps, log, system setup for deployment, (CICD/D
 One of the interesting consepts of Rust. I didn't come accross this way. From the Rust book I have picket an example which was displayed in test-3-8, in a final itteration. </p>
 
 Best display from a graphical view would be the diagram below:</p>
-
-flowchart TD
+```mermaid
+flowchart TD;
     A[Input Value: scrutinee] -->|Compare| B1{Pattern 1}
     A -->|Compare| B2{Pattern 2}
     A -->|Compare| B3{Pattern ...}
@@ -25,7 +25,7 @@ flowchart TD
     C2 --> D
     C3 --> D
     C4 --> D
-
+```
 
 A simple snipet to conclude the idea:</p>
 
