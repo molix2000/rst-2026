@@ -12,13 +12,13 @@ Best display from a graphical view would be the diagram below:</p>
 ```mermaid
 flowchart TD;
     A[Input Value: scrutinee] -->|Compare| B1{Pattern 1}
-    A -->|Compare| B2{Pattern 2}
-    A -->|Compare| B3{Pattern ...}
+    A -->|Compare| B2{Pattern 5}
+    A -->|Compare| B3{Pattern 10}
     A -->|Compare| B4{Wildcard _}
 
     B1 -- Yes --> C1[Execute Code 1]
-    B2 -- Yes --> C2[Execute Code 2]
-    B3 -- Yes --> C3[Execute Code ...]
+    B2 -- Yes --> C2[Execute Code 5]
+    B3 -- Yes --> C3[Execute Code 10]
     B4 -- Yes --> C4[Execute Catch-all]
 
     C1 --> D[Return Value]
