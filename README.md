@@ -25,7 +25,7 @@ graph TD
     C2 --> D
     C3 --> D
     C4 --> D
-
+...
 
 A simple snipet to conclude the idea:</p>
 
