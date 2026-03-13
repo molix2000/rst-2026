@@ -10,7 +10,7 @@ One of the interesting consepts of Rust. I didn't come accross this way. From th
 
 Best display from a graphical view would be the diagram below:</p>
 
-graph TD
+```mermaid
     A[Input Value: scrutinee] -->|Compare| B1{Pattern 1}
     A -->|Compare| B2{Pattern 2}
     A -->|Compare| B3{Pattern ...}
