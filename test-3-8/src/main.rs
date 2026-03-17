@@ -14,7 +14,13 @@ fn main() {
 
     println!("Your guess number is {guess}");
 
-    let guess: u32 = guess.trim().parse().expect("Opps parsing didn't go well");
+    let guess: u32 = match guess.trim().parse() {
+        Ok(num)  => num,
+        Err(_) => {
+            println!("Error");
+            33
+        }
+    };
 
     match guess.cmp(&secret_number) {
         Ordering::Greater => println!("This is greater value"),

@@ -1,0 +1,8 @@
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/native_tls-d2465de1f6dad717.d: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/imp/openssl.rs
+
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/libnative_tls-d2465de1f6dad717.rlib: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/imp/openssl.rs
+
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/libnative_tls-d2465de1f6dad717.rmeta: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/imp/openssl.rs
+
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/imp/openssl.rs:

@@ -1,0 +1,14 @@
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/serde-2f3c929ee104d19d.d: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/build/serde-425d4a9c1d21ba47/out/private.rs
+
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/libserde-2f3c929ee104d19d.rlib: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/build/serde-425d4a9c1d21ba47/out/private.rs
+
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/deps/libserde-2f3c929ee104d19d.rmeta: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/build/serde-425d4a9c1d21ba47/out/private.rs
+
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/build/serde-425d4a9c1d21ba47/out/private.rs:
+
+# env-dep:OUT_DIR=/home/devops/Documents/source-code/rst-2026/test-3-8/target/debug/build/serde-425d4a9c1d21ba47/out
