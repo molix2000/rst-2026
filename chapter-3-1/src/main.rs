@@ -24,4 +24,10 @@ fn main() {
     let tup: (i32, f64, u8) = (500,6.4,1);
     let (x,y,z) = tup;
     println!("{x}, {y}, {z}");
+    println!("1st part of fup is x,{}",tup.0);
+    println!("2nd part of tup is y, {}", tup.1);
+    let a = [1, 2, 3, 4, 5];
+    println!(" A is {}", a[0]);
+    let b :(i32, 5) = [6,7,8,9,10];
+    println!(" the 4th member of b is {}", b.3);
 }
