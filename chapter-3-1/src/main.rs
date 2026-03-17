@@ -28,6 +28,6 @@ fn main() {
     println!("2nd part of tup is y, {}", tup.1);
     let a = [1, 2, 3, 4, 5];
     println!(" A is {}", a[0]);
-    let b :(i32, 5) = [6,7,8,9,10];
-    println!(" the 4th member of b is {}", b.3);
+    let b  = [6,7,8,9,10];
+    println!(" the 4th member of b is {}", b[3]);
 }
