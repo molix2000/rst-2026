@@ -388,3 +388,22 @@ println!("Vector Type primitives");
 
 
 ```
+
+#### As far as conditional statements are concerned below is an example of how to negate a statement. </p> key observations are the shortened version of it, (There is a longer more traditional version, this matches most other languages). </p> 
+
+```
+
+println!("Chapter 3 case statements in shortened format");
+    let condition_one: bool = true;
+    let condition_two: bool = false;
+
+    if condition_one { println!("PRocess mortgadge"); } else if !(condition_one)  { println!("Mortgadge suspended!"); } else {println!("There is an input error");}
+
+    if condition_two {println!("This property is freehold");} else { println!("This property is lease_hold");}
+
+```
+
+The other main point is how to negate a value, line 400. </p>
+```
+   !(condition_one)
+```
