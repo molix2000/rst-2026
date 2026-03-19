@@ -389,7 +389,7 @@ println!("Vector Type primitives");
 
 ```
 
-#### As far as conditional statements are concerned below is an example of how to negate a statement. </p> key observations are the shortened version of it, (There is a longer more traditional version, this matches most other languages). </p> 
+#### Conditional statements: </p> are concerned below is an example of how to negate a statement. </p> key observations are the shortened version of it, (There is a longer more traditional version, this matches most other languages). </p> 
 
 ```
 
@@ -406,4 +406,23 @@ println!("Chapter 3 case statements in shortened format");
 The other main point is how to negate a value, line 400. </p>
 ```
    !(condition_one)
+```
+
+#### Internal reference :</p>
+Can have different was of being marked, with the '_' as per example.</p> A variable was also assigned to a loop.</p>
+
+```
+fn main() {
+   let mut cake = 0;
+   let _cream_load = loop {
+       cake += 1; 
+       if cake == 10 {
+       break cake * 3;
+      }
+   };
+
+   println!("The cake count was {cake}");
+  
+}
+
 ```
