@@ -7,4 +7,11 @@ fn main() {
         println!("this is the inner promprt printer function");
     }
     print_prompt_title(A);
+
+
+    fn number_reflector (number: i32) {
+
+        println!("The number is {number}");
+    }
+    number_reflector(A);
 }
