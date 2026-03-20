@@ -1,0 +1,12 @@
+/molix2000/target/debug/deps/libfutures_channel-d1d3a752a02ef103.rmeta: /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lib.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lock.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/mod.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/queue.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/sink_impl.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/oneshot.rs
+
+/molix2000/target/debug/deps/libfutures_channel-d1d3a752a02ef103.rlib: /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lib.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lock.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/mod.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/queue.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/sink_impl.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/oneshot.rs
+
+/molix2000/target/debug/deps/futures_channel-d1d3a752a02ef103.d: /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lib.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lock.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/mod.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/queue.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/sink_impl.rs /cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/oneshot.rs
+
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lib.rs:
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/lock.rs:
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/mod.rs:
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/queue.rs:
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/mpsc/sink_impl.rs:
+/cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.32/src/oneshot.rs:
