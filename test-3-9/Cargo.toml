@@ -1,3 +1,4 @@
+cargo-features = ["edition2024"]
 [package]
 name = "test-3-8"
 version = "0.1.0"
