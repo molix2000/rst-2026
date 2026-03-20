@@ -42,3 +42,8 @@ match coin {
     _ => 0, // Catch-all
 }
 ```
+
+## Cargo build options:</p>
+An informative link can be found below.</p>
+Recommend reading details.</p>
+[Cargo Options](https://doc.rust-lang.org/cargo/commands/cargo-build.html_)
