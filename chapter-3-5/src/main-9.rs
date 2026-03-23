@@ -58,3 +58,10 @@ fn delta() {
       index += 1;    
     }
 }
+
+fn printer_two(){
+
+    let 
+}
+
+// this url https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
