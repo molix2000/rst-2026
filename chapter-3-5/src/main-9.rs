@@ -13,6 +13,7 @@ fn main() {
     let eight = a.2;
     main2();
     another_fn(8);
+    delta();
 }
 
 fn main2() {
@@ -44,4 +45,16 @@ fn another_fn(x: i32) -> i32 {
      return v ;
      
      
+}
+
+
+fn delta() {
+
+    let a = [0,1,2,3,4,5];
+    let mut index = 0;
+
+    while index < 6 {
+      println!("the position ofd index is{index}");
+      index += 1;    
+    }
 }
