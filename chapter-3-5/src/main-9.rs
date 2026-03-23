@@ -12,6 +12,7 @@ fn main() {
     let six_4 = a.1;
     let eight = a.2;
     main2();
+    another_fn(8);
 }
 
 fn main2() {
@@ -35,4 +36,12 @@ fn main2() {
   println!("\nThe string before trim is '{}' and length is {}", string3, string3.len());
   println!("The string when trimmed is '{}' and length is {}", trim3, trim3.len());
 
+}
+
+fn another_fn(x: i32) -> i32 {
+     let v = x + 5;
+     println!("The value of V is {v}");
+     return v ;
+     
+     
 }
