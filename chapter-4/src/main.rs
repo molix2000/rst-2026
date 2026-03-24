@@ -16,4 +16,7 @@ fn main() {
     // One cannot add the two string either, so what to do?
     let stringer4 = format!("{}{}", stringer2,stringer3);
     println!("{stringer4}");
+
+    let stringer5 = stringer2.to_owned() + stringer3;
+    println!("{stringer5}");
 }
