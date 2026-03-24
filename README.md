@@ -28,7 +28,8 @@ flowchart TD;
     HEAP --> VM[Varied Memory]
     STACK --> ORDL[LIFO]
     HEAP --> ORDF[FIFO]
-
+    STACK --> SS[FAST]
+    HEAP --> HS[SLOW]
 
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
     style Rust fill:#bbf,stroke:#333,stroke-width:2px
