@@ -39,4 +39,6 @@ fn main() {
     println!("{delta}");
     let sigma = String::from(stringer2) + "Always at your sight";
     println!("{sigma}");
+    let foo: String = "Rust Lang ".to_owned() + stringer3;
+    println!("{foo}");
 }
