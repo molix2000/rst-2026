@@ -41,4 +41,11 @@ fn main() {
     println!("{sigma}");
     let foo: String = "Rust Lang ".to_owned() + stringer3;
     println!("{foo}");
+    let jetta: &str = "Volkeswagen Jetta";
+    let mut car: String = jetta.to_string();
+    car.push_str(" is a great car");
+    println!("{car}");
+    // More pitfalls highlighted below:
+    // let volkeswagen: String =jetta.as_str().to_owned();
+   // println!("{volkeswagen}");
 }
