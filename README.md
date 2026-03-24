@@ -57,3 +57,5 @@ This the best way once can describe the two.</p> symbol '&' and str. </p> Its an
 
 Great reference here:
 [Strings/Rust](https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522) 
+
+The '&str' is stored on 'STACK'.</p>
