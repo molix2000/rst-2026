@@ -76,4 +76,14 @@ fn main() {
     let slice = &gampa[0..5];
     println!("Gampa: {gampa}");
     println!("Slice:{slice}");
+    let text = " Rabbit jumps on to the bed";
+    // if text.contains(Rabbit") {
+       // println!("The text contains Rabbit");
+   //} else {
+        //println!("The test does not contain Rabbit");
 }
+
+
+// https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522
+
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
