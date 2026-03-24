@@ -19,4 +19,22 @@ fn main() {
 
     let stringer5 = stringer2.to_owned() + stringer3;
     println!("{stringer5}");
+
+    let mut z: char = 'a';
+    // canno add a char to a &str, as below, but can add a char to a String
+    // let stringer6: String = z.to_owned() + stringer2 + stringer3;
+    // println!("{stringer6}");
+
+    // Further bad assumptions and pitfalls.
+    //let stringer7 : String = stringer2.to_owned() + z.to_string();
+    //println!("{stringer7}");
+
+    let alpha: &str = "start ";
+    let beta: &str = "learning ";
+    let gamma: &str = "Rust";
+    let mut delta: String = String::new();
+    delta.push_str(alpha);
+    delta.push_str(beta);
+    delta.push_str(gamma);
+    println!("{delta}");
 }
