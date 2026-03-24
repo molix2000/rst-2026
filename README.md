@@ -16,7 +16,7 @@ graph TD;
           PROCESS ||--o{ HEAP : receives
           INVOICE ||--|{ HEAP : covers
           HEAP ||--|{ HEAP-ITEM : includes
-          DATA-"" varied size items CATEGORY ||--|{ DATA : contains
+          DATA-"varied size items " CATEGORY ||--|{ DATA : contains
           DATA ||--o{ DATA-ITEM : "data in"
 
 ```
