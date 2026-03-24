@@ -8,7 +8,7 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 ### Stack
 
 
-```
+```mermaid
 
 flowchart TD;
 
@@ -21,6 +21,6 @@ flowchart TD;
     MEMRef --> HEAP[HEAP Spec]
     
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
-    style Mermaid fill:#bbf,stroke:#333,stroke-width:2px
+    style Rust fill:#bbf,stroke:#333,stroke-width:2px
 
 ```
