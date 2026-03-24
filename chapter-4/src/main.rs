@@ -50,4 +50,11 @@ fn main() {
     // println!("{volkeswagen}");
     // let mut jc: String = String::from("Toyota") + alpha.as_str();
     // println!("{jc}");
+
+    let owned_string = String::from("Rust By Example");
+    let string_slice: &str = owned_string.as_str();
+    println!("Owned_string: {owned_string}");
+    println!("String_Slice: {string_slice}");
+
+
 }
