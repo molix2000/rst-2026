@@ -8,7 +8,7 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 ### Stack
 
 
-```mermaid
+```
 
 flowchart TD;
 
