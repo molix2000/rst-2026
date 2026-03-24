@@ -9,9 +9,10 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 
 
 ```mermaid
-graph TD;
 
-flowchart TD
+flowchart TD;
+
+
     ReadMe[MEMORY] --> 
     ReadMe --> MEMRef[TYPES]
     
