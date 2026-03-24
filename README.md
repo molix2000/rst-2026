@@ -14,7 +14,7 @@ flowchart TD;
 
 
     ReadMe[MEMORY] --> MEMRef
-    ReadMe --> MEMRef[TYPES]
+    MEMRef[TYPES]
     
     
     MEMRef --> STACK[STACK Spec]
