@@ -42,3 +42,12 @@ flowchart TD;
     style Rust fill:#bbf,stroke:#333,stroke-width:2px
 
 ```
+
+## Data Types:</p>
+
+They live on either one of the two areas of memory that have been mentioned before. </p>
+
+### String</p>
+Extra help from this article:
+</p>
+https://www.brandons.me/blog/why-rust-strings-seem-hard
