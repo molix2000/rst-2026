@@ -6,10 +6,10 @@ A journey into Rust. Designed to focus on progress steps and learned lessons.
 Two elements STACK and HEAP, most programmers know those two.</p> There are some key features:</p>
 
 ### Stack: </p>
-Afiliated with Fixed memory data items.</p>
+Affiliated with Fixed memory data items.</p>
 
 ### Heap: </p>
-Afiliated with variable memory items sizes.</p>
+Affiliated with variable memory items sizes.</p>
 
 
 ```mermaid
