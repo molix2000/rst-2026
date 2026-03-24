@@ -10,13 +10,16 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 
 ```mermaid
 graph TD;
-          MEMORY }|..|{ PROCESS : has
-          MEMORY ||--o{ ORDER : places
-          MEMORY ||--o{ STACK : "FIXED SIZE DATA"
-          PROCESS ||--o{ HEAP : receives
-          INVOICE ||--|{ HEAP : covers
-          HEAP ||--|{ HEAP-ITEM : includes
-          DATA-CATEGORY ||--|{ DATA : contains
-          DATA ||--o{ DATA-ITEM : "data in"
+
+flowchart TD
+    ReadMe[MEMORY] --> 
+    ReadMe --> MEMRef[TYPES]
+    
+    
+    MEMRef --> STACK[STACK Spec]
+    MEMRef --> HEAP[HEAP Spec]
+    
+    style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
+    style Mermaid fill:#bbf,stroke:#333,stroke-width:2px
 
 ```
