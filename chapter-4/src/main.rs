@@ -1,3 +1,5 @@
+use std::fmt::format;
+
 fn main() {
     println!("Chapter 4!");
     let mut s = String::from("This is chapter 4");
@@ -55,6 +57,23 @@ fn main() {
     let string_slice: &str = owned_string.as_str();
     println!("Owned_string: {owned_string}");
     println!("String_Slice: {string_slice}");
-
-
+    let string_slice_deref: &str = &*owned_string;
+    println!("String_Slice_Deref: {string_slice_deref}"); 
+    let bytes: &[u8] = &[72,101,108,111];
+    let string_from_bytes = String::from_utf8(bytes.to_vec()).expect("This could go wrong and did");
+    println!("String from bytes: {string_from_bytes}");
+    let num: i32 = 42;
+    let string_from_num = num.to_string();
+    println!("string from num:{string_from_num}");
+    let age: String = "30".to_string();
+    let name = "Sam";
+    let emp_id  = format!("{},{}", name, age);
+    println!("{emp_id}");
+    let original = "Learn, Rust";
+    let reversed: String = original.chars().rev().collect();
+    println!("Originl: {original},Reversed: {reversed}");
+    let gampa = "Trust Rust";
+    let slice = &gampa[0..5];
+    println!("Gampa: {gampa}");
+    println!("Slice:{slice}");
 }
