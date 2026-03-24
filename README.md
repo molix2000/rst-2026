@@ -35,7 +35,9 @@ flowchart TD;
     STACK --> DC[Data Close]
     HEAP --> DF[DATA Far]
     
-    
+    STACK --> LF[Local Function Variables]
+    HEAP --> PD[Pointers to Data]
+
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
     style Rust fill:#bbf,stroke:#333,stroke-width:2px
 
