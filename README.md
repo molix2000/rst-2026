@@ -20,8 +20,8 @@ flowchart TD;
     MEMRef --> STACK[STACK Spec]
     MEMRef --> HEAP[HEAP Spec]
 
-    [STACK] --> FM[Fixed Memory]
-    [HEAP] --> VM[Varied Memory]
+    STACK --> FM[Fixed Memory]
+    HEAP --> VM[Varied Memory]
     
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
     style Rust fill:#bbf,stroke:#333,stroke-width:2px
