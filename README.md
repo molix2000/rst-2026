@@ -13,7 +13,7 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 flowchart TD;
 
 
-    ReadMe[MEMORY] --> 
+    ReadMe[MEMORY] --> MEMRef
     ReadMe --> MEMRef[TYPES]
     
     
