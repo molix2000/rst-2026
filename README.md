@@ -22,8 +22,8 @@ flowchart TD;
 
     STACK --> FM[Fixed Memory]
     HEAP --> VM[Varied Memory]
-    STACK --> ORD[FILO]
-    HEAP --> ORD[FIFO]
+    STACK --> ORDL[FILO]
+    HEAP --> ORDF[FIFO]
 
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
     style Rust fill:#bbf,stroke:#333,stroke-width:2px
