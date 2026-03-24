@@ -47,5 +47,7 @@ fn main() {
     println!("{car}");
     // More pitfalls highlighted below:
     // let volkeswagen: String =jetta.as_str().to_owned();
-   // println!("{volkeswagen}");
+    // println!("{volkeswagen}");
+    // let mut jc: String = String::from("Toyota") + alpha.as_str();
+    // println!("{jc}");
 }
