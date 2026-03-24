@@ -1,12 +1,58 @@
-   0.014398733s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs"
-   0.014412974s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-502b8a9ba4fcd5a5/dep-bin-chapter-4"
-   0.014418696s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774374714, nanos: 853791613 } < FileTime { seconds: 1774374715, nanos: 77794088 }
-   0.014448641s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4)/Check { test: false }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", Edition2024) }
-   0.014460752s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-502b8a9ba4fcd5a5/dep-bin-chapter-4", reference_mtime: FileTime { seconds: 1774374714, nanos: 853791613 }, stale: "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", stale_mtime: FileTime { seconds: 1774374715, nanos: 77794088 } }))
-   0.014639180s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs"
-   0.014646217s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-a416e9f3fb6efd1e/dep-test-bin-chapter-4"
-   0.014650347s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774374714, nanos: 853791613 } < FileTime { seconds: 1774374715, nanos: 77794088 }
-   0.014669903s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4)/Check { test: true }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", Edition2024) }
-   0.014680125s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-a416e9f3fb6efd1e/dep-test-bin-chapter-4", reference_mtime: FileTime { seconds: 1774374714, nanos: 853791613 }, stale: "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", stale_mtime: FileTime { seconds: 1774374715, nanos: 77794088 } }))
+   0.014981125s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs"
+   0.014996237s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-502b8a9ba4fcd5a5/dep-bin-chapter-4"
+   0.015000977s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774375502, nanos: 419949751 } < FileTime { seconds: 1774375502, nanos: 759951746 }
+   0.015029774s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4)/Check { test: false }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", Edition2024) }
+   0.015040904s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-502b8a9ba4fcd5a5/dep-bin-chapter-4", reference_mtime: FileTime { seconds: 1774375502, nanos: 419949751 }, stale: "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", stale_mtime: FileTime { seconds: 1774375502, nanos: 759951746 } }))
+   0.015209571s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs"
+   0.015216312s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/.fingerprint/chapter-4-a416e9f3fb6efd1e/dep-test-bin-chapter-4"
+   0.015220405s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774375502, nanos: 419949751 } < FileTime { seconds: 1774375502, nanos: 759951746 }
+   0.015289701s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4)/Check { test: true }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4/src/main.rs", Edition2024) }
+   0.015299498s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4) target="chapter-4"}: cargo::core::compiler::fingerprint:     err: failed to deserialize json
+
+Caused by:
+    EOF while parsing a value at line 1 column 0
+
+Stack backtrace:
+   0: std::backtrace_rs::backtrace::libunwind::trace
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/../../backtrace/src/backtrace/libunwind.rs:117:9
+   1: std::backtrace_rs::backtrace::trace_unsynchronized
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/../../backtrace/src/backtrace/mod.rs:66:14
+   2: std::backtrace::Backtrace::create
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/backtrace.rs:331:13
+   3: <serde_json::error::Error as anyhow::context::ext::StdError>::ext_context::<anyhow::Error>
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  18: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  19: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:581:40
+  22: std::panicking::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panicking.rs:544:19
+  23: std::panic::catch_unwind
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/4a4ef493e3a1488c6e321570238084b38948f6db/library/std/src/rt.rs:171:5
+  25: main
+  26: <unknown>
+  27: __libc_start_main
+  28: <unknown>
     Checking chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s

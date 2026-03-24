@@ -37,4 +37,6 @@ fn main() {
     delta.push_str(beta);
     delta.push_str(gamma);
     println!("{delta}");
+    let sigma = String::from(stringer2) + "Always at your sight";
+    println!("{sigma}");
 }
