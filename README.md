@@ -51,3 +51,9 @@ They live on either one of the two areas of memory that have been mentioned befo
 Extra help from this article:
 </p>
 https://www.brandons.me/blog/why-rust-strings-seem-hard
+
+### String_slice is &str:</p>
+This the best way once can describe the two.</p> symbol '&' and str. </p> Its an immutable reference to a sequence of UTF-8 characters. </p> 
+
+Great reference here:
+[Strings/Rust](https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522) 
