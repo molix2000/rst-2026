@@ -9,5 +9,14 @@ Two elements STACK and HEAP, most programmers know those two.</p> Thre are some 
 
 
 ```mermaid
-MEMORY } | .. |{ Proce(s)/Progrm(s) : has MEMORY ||--o{ ORDER: FILO MEMORY ||--o { STACK: "  fixed-size data only"
+erDiagram
+          MEMORY }|..|{ PROCESS : has
+          MEMORY ||--o{ ORDER : places
+          MEMORY ||--o{ STACK : "FIXED SIZE DATA"
+          PROCESS ||--o{ HEAP : receives
+          INVOICE ||--|{ HEAP : covers
+          HEAP ||--|{ HEAP-ITEM : includes
+          DATA-CATEGORY ||--|{ DATA : contains
+          DATA ||--o{ DATA-ITEM : "data in"
+
 ```
