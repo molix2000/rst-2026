@@ -65,3 +65,25 @@ The '&str' is stored on 'STACK'.</p>
 (Borrow & Strings)[https://dev.to/stevepryde/rust-string-vs-str-1l93]
 
 (Strings and slices)[https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522]
+
+
+### Equalising strings</p>
+In the example below we can see two strings equalized and how this works.</p>
+
+```
+fn main() {
+    // 1. &str (borrowed string slice)
+    let borrowed_str: &str = "Hello, world!";
+
+    // 2. Convert to owned String using to_owned()
+    let owned_string: String = borrowed_str.to_owned();
+
+    // Now you can modify it
+    let mut mutable_string = owned_string;
+    mutable_string.push_str(".. and more!");
+    println!("{}", mutable_string);
+}
+
+
+```
+
