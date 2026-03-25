@@ -59,3 +59,9 @@ Great reference here:
 [Strings/Rust](https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522) 
 
 The '&str' is stored on 'STACK'.</p>
+
+### Detailed examples:</p>
+
+(Borrow & Strings)[https://dev.to/stevepryde/rust-string-vs-str-1l93]
+
+(Strings and slices)[https://dev.to/alexmercedcoder/in-depth-guide-to-working-with-strings-in-rust-1522]
