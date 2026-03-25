@@ -13,7 +13,9 @@ fn get_string() -> String {
 
 
 fn print_string(my_string: &str) {
-   println!("{}",my_string);
+   println!("{}",&my_string);
 
+   println!("{}",my_string.to_uppercase());
+   println!("{}",&my_string.to_uppercase());
 }
 
