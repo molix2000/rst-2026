@@ -4,7 +4,8 @@ fn main(){
     println!("stra: {stra}");
     let mut strb = stra.push_str(" Regulrarly, in cycles");
     //let mut strb:String  = stra;
-    println!("strb:{strb}");
-    let mut literal: &str = "Rust Chapter4";
-    println!("Literal: {}",&literal.to_string());
+
+    // new chunk
+    let literal: &str = "Rust booklet";
+    println!("Literal:{}",literal);
 }
