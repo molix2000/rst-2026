@@ -1,0 +1,12 @@
+use regex::Regex;
+
+fn main() {
+
+   let pattern =  Regex::new(r"\d+").unwrap();
+   let text = "I have 3 apples, 5 oranges, and 12 bananas";
+   for match_ in pattern.find_iter(text) {
+       println!("{}", match_.as_str());
+   }
+
+}
+

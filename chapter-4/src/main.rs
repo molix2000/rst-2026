@@ -22,4 +22,9 @@ fn main(){
   println!("TLD: {}", &captures[3]);
 
  }
+
+ let pattern3 = Regex::new(r"\d+").unwrap();
+ let pattern_target1 = "My phone num is 09765430212. ";
+ let result1 = pattern3.replace_all(pattern_target1, "[REDACTED]");
+ println!("Result1 is :{} " , result1);
 }
