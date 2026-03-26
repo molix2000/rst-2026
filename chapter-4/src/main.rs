@@ -16,7 +16,7 @@ fn main(){
 
  let email = "example@domain.com";
 
- if let Some(captures) = pattern.captures(email) {
+ if let Some(captures) = pattern2.captures(email) {
   println!("User: {}", &captures[1]);
   println!("Domain: {}",&captures[2]);
   println!("TLD: {}", &captures[3]);
