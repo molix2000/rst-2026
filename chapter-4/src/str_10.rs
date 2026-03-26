@@ -32,4 +32,11 @@ fn main(){
 
     let new_brands_list = bike_list.replacen("Ducati", "KTM", 1);
     println!("New brands list {}: ", new_brands_list);
+
+
+    let shop_brand = "Aldi TKMAX Liddle   #";
+    let trimmed_shop_brand = shop_brand.trim();
+    println!("{}", trimmed_shop_brand);
+    let specific_trimmed_shop_brands = shop_brand.trim_matches('#');
+    println!("The specifically trimmed shop brands list is :{}",specific_trimmed_shop_brands); 
 }

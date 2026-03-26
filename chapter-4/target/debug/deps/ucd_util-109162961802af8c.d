@@ -1,0 +1,11 @@
+/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/deps/ucd_util-109162961802af8c.d: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/hangul.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/ideograph.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/name.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/property.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/mod.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/jamo_short_name.rs
+
+/home/devops/Documents/source-code/rst-2026/chapter-4/target/debug/deps/libucd_util-109162961802af8c.rmeta: /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/lib.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/hangul.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/ideograph.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/name.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/property.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/mod.rs /home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/jamo_short_name.rs
+
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/lib.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/hangul.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/ideograph.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/name.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/property.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/mod.rs:
+/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ucd-util-0.1.10/src/unicode_tables/jamo_short_name.rs:
