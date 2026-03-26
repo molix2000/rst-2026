@@ -11,4 +11,15 @@ fn main(){
       println!("The Date is an incorrect format!");
    }
 
+
+ let pattern2 = Regex::new(r"(\w+)@(\w+)\.(\w+)").unwrap();
+
+ let email = "example@domain.com";
+
+ if let Some(captures) = pattern.captures(email) {
+  println!("User: {}", &captures[1]);
+  println!("Domain: {}",&captures[2]);
+  println!("TLD: {}", &captures[3]);
+
+ }
 }
