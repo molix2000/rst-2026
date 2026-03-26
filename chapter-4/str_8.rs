@@ -14,7 +14,10 @@ fn main(){
  let road: String = "Road".to_string();
  let greeting = format!("{} {}", rust, road);
  println!("{greeting}");
+ let greeting2 = "Rust beggining";
 
+ let reverse:String = greeting2.chars().rev().collect();
+ println!("{}",reverse);
 
 
 
