@@ -7,6 +7,20 @@ fn main() {
    for match_ in pattern.find_iter(text) {
        println!("{}", match_.as_str());
    }
+ let sir = "High Rust";
+ for c in sir.chars() {
+    println!("{}", c);
+ }   
+
+let sim = "Rust Clinic";
+    for b in sim.bytes() {
+
+     println!("{}", b);
+    }
+
+
+
+
 
 }
 
