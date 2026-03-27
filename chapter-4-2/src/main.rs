@@ -186,5 +186,5 @@ fn calculate_lenght(s: String) -> (String, usize) {
 }
 
 fn change(some_string: &String)  {
-    some_string.push(", Rust");
+    some_string.push(String: ", Rust");
 }
