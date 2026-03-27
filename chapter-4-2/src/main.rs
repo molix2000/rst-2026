@@ -107,4 +107,16 @@ fn main() {
     my_str_s.push_str(" precision ");
     my_str_s.push('!');
     println!("The String now is {}",my_str_s);
+
+
+
+    // Example where string slice can be used to save memory not too much copy.
+
+    fn print_title(title: &str) {
+        println!("{title}");
+    }
+
+    let mut my_title_s: &str = "Rust Chapter 4.2";
+    // print_title(format!(("{my_title_s}")));
+    print_title(format!("{}", ("{my_title_s}")));
 }
