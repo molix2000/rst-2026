@@ -146,8 +146,14 @@ fn main() {
     take_ownership(stringoo6);
     makes_copy(42);
 
-    
-}
+    // handling values pass
+    let stringoo7 = gives_ownership();
+    println!("stringoo7 is {}", stringoo7);
+
+    let stringoo8 = STring::from("Rust framework axom");
+    let stringoo9 = takes_and_gives_back(stringoo8);
+    println!("strigoo9 is {}", stringoo9);
+}  
 
 fn take_ownership(some_string:String){
     println!("{some_string}");
@@ -159,3 +165,12 @@ fn makes_copy(some_integer: i32) {
     println!("{some_integer}");
 }
 
+fn gives_ownership() -> STring {
+    let some_string = STring::from("yours");
+    some_string
+}
+
+fn takes_and_gives_back(a_string: String) -> String {
+    a_string
+
+}
