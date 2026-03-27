@@ -150,7 +150,7 @@ fn main() {
     let stringoo7 = gives_ownership();
     println!("stringoo7 is {}", stringoo7);
 
-    let stringoo8 = STring::from("Rust framework axom");
+    let stringoo8 = String::from("Rust framework axom");
     let stringoo9 = takes_and_gives_back(stringoo8);
     println!("strigoo9 is {}", stringoo9);
 
