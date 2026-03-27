@@ -95,4 +95,15 @@ fn main() {
     let s: &mut str = &mut source;
     s.make_ascii_uppercase();
     println!("{}", s);
+
+
+
+    // new segment to prove transition from Slice to String:
+    //
+    let mut my_str: &str = "Rust Programme";
+    my_str_s = my_str.to_string();
+    my_str_s.push(" Chapters,");
+    my_str_s.push(" Teaches ");
+    my_str_s.push(" precision ");
+    println!("The String now is {}",my_str);
 }
