@@ -86,4 +86,5 @@ fn main() {
 
 
 ```
+Ref: [link-Thursday/206-03-26](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
