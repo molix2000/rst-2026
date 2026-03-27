@@ -116,7 +116,16 @@ fn main() {
         println!("{title}");
     }
 
-    let mut my_title_s: &str = "Rust Chapter 4.2";
+    let my_title_s: &str = "Rust Chapter 4.2";
     // print_title(format!(("{my_title_s}")));
-    print_title(format!("{}", ("{my_title_s}")));
+    print_title(my_title_s);
+
+
+    // Example STring vs Slice:
+    let my_string = String::from("Hello, Rust!"); // A heap-allocated String
+    let my_slice: &str = &my_string[0..5]; // A string slice representing "Hello"
+
+    println!("Original String: {}", my_string);
+    println!("String Slice: {}", my_slice);
 }
+
