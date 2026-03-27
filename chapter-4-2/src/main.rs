@@ -128,9 +128,15 @@ fn main() {
     println!("Original String: {}", my_string);
     println!("String Slice: {}", my_slice);
 
-    let mut source : STring = "Rust 1.9.2".to_string();
+    let mut source : String = "Rust 1.9.2".to_string();
     let s: &mut str = &mut source;
     s.make_ascii_uppercase();
     println!("{}", s);
+
+    // cloning a string:
+
+    let stringoo4: String = "High Rust Book".to_string();
+    let stringoo5 = stringoo4.clone();
+    println!("{}, {}, these are stringoo4 & 5", stringoo4, stringoo5);
 }
 
