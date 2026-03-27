@@ -1,8 +1,8 @@
 fn main() {
     println!("Chapter 4 2");
 
-    fn main()
-{
+  //  fn main()
+//{
    // These are references to strings, so the value of
    // the text isn't stored in them. Just the address of
    // where in memory the string data is stored. 
@@ -88,7 +88,7 @@ fn main() {
    // Address of new (helloworld) = 0x55a36c3486d0
    //
    println!( "Address of new ({}) = {:p}", new, new );
-}
+// }
  
 
 }
