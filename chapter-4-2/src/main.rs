@@ -127,5 +127,10 @@ fn main() {
 
     println!("Original String: {}", my_string);
     println!("String Slice: {}", my_slice);
+
+    let mut source : STring = "Rust 1.9.2".to_string();
+    let s: &mut str = &mut source;
+    s.make_ascii_uppercase();
+    println!("{}", s);
 }
 
