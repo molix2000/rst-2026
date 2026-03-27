@@ -184,3 +184,7 @@ fn calculate_lenght(s: String) -> (String, usize) {
     let lenght = s.len();
     (s, lenght)
 }
+
+fn change(some_string: &String)  {
+    some_string.push(", Rust");
+}
