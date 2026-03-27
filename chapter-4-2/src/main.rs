@@ -138,5 +138,24 @@ fn main() {
     let stringoo4: String = "High Rust Book".to_string();
     let stringoo5 = stringoo4.clone();
     println!("{}, {}, these are stringoo4 & 5", stringoo4, stringoo5);
+
+
+    // ownership transfer:
+
+    let stringoo6: String = "High Rust Functions".to_string();
+    take_ownership(stringoo6);
+    makes_copy(42);
+
+    
+}
+
+fn take_ownership(some_string:String){
+    println!("{some_string}");
+
+
+}
+
+fn makes_copy(some_integer: i32) {
+    println!("{some_integer}");
 }
 
