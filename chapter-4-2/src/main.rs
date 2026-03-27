@@ -153,6 +153,10 @@ fn main() {
     let stringoo8 = STring::from("Rust framework axom");
     let stringoo9 = takes_and_gives_back(stringoo8);
     println!("strigoo9 is {}", stringoo9);
+
+    let stringoo10 = String::from("Rust Length");
+    let (stringoo11, lenght) = calculate_lenght(stringoo10);
+    println!("stringoo11 is {}, and its length is {}", stringoo11, lenght);
 }  
 
 fn take_ownership(some_string:String){
@@ -165,12 +169,18 @@ fn makes_copy(some_integer: i32) {
     println!("{some_integer}");
 }
 
-fn gives_ownership() -> STring {
-    let some_string = STring::from("yours");
+fn gives_ownership() -> String {
+    let some_string = String::from("yours");
     some_string
 }
 
 fn takes_and_gives_back(a_string: String) -> String {
     a_string
 
+}
+
+fn calculate_lenght(s: String) -> (String, usize) {
+
+    let lenght = s.len();
+    (s, lenght)
 }
