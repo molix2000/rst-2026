@@ -7,6 +7,8 @@ fn main(){
     another_func_one();
     another_func_two(4);
     another_func_three(8,'R');
+    let b = another_func_two(6);
+    println!("{b}");
  } // end of main function
    //
 
