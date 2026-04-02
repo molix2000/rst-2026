@@ -93,3 +93,52 @@ Ref: [link-Thursday/206-03-26](https://doc.rust-lang.org/book/ch04-01-what-is-ow
 [Ref on playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=cf4c7bd80f57b8f341f3089f0e1e66d1)
 
 [String vs str](https://dev.to/dsysd_dev/string-vs-str-in-rust-understanding-the-fundamental-differences-for-efficient-programming-4og8)
+
+
+### Functions:</p>
+The storage arrangement of the function components can vary, below is a simple explanation.</p>
+
+In Rust, the answer depends on whether you are talking about the function code itself or function pointers and closures.</p>
+
+To be precise: functions are not "stored" on the stack or the heap in the way data is.
+1. The Function Code (Text Segment). </p>
+
+The actual compiled instructions of a function reside in the Text Segment (or Code Segment) of the program's memory. This is a read-only area of memory loaded when the program starts. It is neither the stack nor the heap.</p>
+
+2. Function Pointers (fn) </p>
+
+When you pass a function around as a value using a function pointer (the fn type), the pointer itself is just a memory address. </p>
+
+    On the Stack: If you declare a variable let f = my_function;, the address of my_function is stored on the stack.</p>
+
+    Size: A function pointer is the size of a usize (e.g., 8 bytes on a 64-bit system).</p>
+
+3. Closures</p>
+
+Closures are more complex because they can "capture" variables from their environment. How they are stored depends on their type:</p>
+Stack Storage (Default)</p>
+
+By default, Rust creates a unique, anonymous struct for every closure. If you define a closure within a function, that struct is stored on the stack.</p>
+Rust</p>
+```
+let x = 10;
+let closure = |y| x + y; // This struct lives on the stack
+```
+Heap Storage (Boxed)</p>
+
+If you need to return a closure from a function or store it in a way that outlives the current scope, you must "Box" it. This moves the closure's data to the heap.
+Rust</p>
+```
+fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
+    let x = 10;
+    Box::new(move |y| x + y) // The closure is now on the heap
+}
+```
+### Summary Table: </p>
+Entity	Primary Location	Notes
+Compiled Code	Text Segment	Read-only; loaded at execution start.
+Function Pointer	Stack	Just a usize address pointing to the Text Segment.</p>
+Normal Closure	Stack	An anonymous struct containing captured variables.
+Boxed Closure	Heap	Used for dynamic dispatch (dyn Fn) or returning closures.</p>
+
+The "Stack Frame" nuance: While the code isn't on the stack, every time a function is called, a</p> new stack frame is created. This frame stores the function's local variables and return address, but it is destroyed as soon as the function returns. </p>
