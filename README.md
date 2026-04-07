@@ -142,3 +142,25 @@ Normal Closure	Stack	An anonymous struct containing captured variables.
 Boxed Closure	Heap	Used for dynamic dispatch (dyn Fn) or returning closures.</p>
 
 The "Stack Frame" nuance: While the code isn't on the stack, every time a function is called, a</p> new stack frame is created. This frame stores the function's local variables and return address, but it is destroyed as soon as the function returns. </p>
+
+
+### Structural Organization:</p>
+
+To make the code more distributed , separated by files within same folder,</p>
+The use of mod and the name of the separate file was used in the chapter-4-3 example.</p>
+
+```
+mod loopmania;
+use loopmania::loopmania;
+// use loopmania::*;
+
+fn main() {
+    println!("loopmania start");
+    loopmania();
+}
+
+```
+
+### Note: </p>
+The 'use' keyword was followed by a more specific indication to what function to use.</p>
+One can still use the '*' to include multiple.
