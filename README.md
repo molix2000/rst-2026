@@ -164,3 +164,24 @@ fn main() {
 ### Note: </p>
 The 'use' keyword was followed by a more specific indication to what function to use.</p>
 One can still use the '*' to include multiple.
+
+
+### Tuple deconstructor:</p>
+
+In this example below one can see that</p> statement below equalize:</p> 
+(s2,len) to calculate_length(s1);
+
+It may be confusing but the calculate_lenght,</p> returns two parameters, so that would be correct.</p>
+
+```
+fn main() {
+let s1 = String::from("hello");
+let (s2, len) = calculate_length(s1);
+println!("The length of '{s2}' is {len}.");
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+let length = s.len(); // len() returns the length of a String
+(s, length)
+}
+```
