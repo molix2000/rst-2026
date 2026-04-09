@@ -185,3 +185,22 @@ let length = s.len(); // len() returns the length of a String
 (s, length)
 }
 ```
+This can be a way of getting around the rust ownership model, as string one which was owned by main or within the function that declared it 1st. It now has passed its context and length to calculate_length.</p>
+
+### Cleaner way:</p>
+Perhaps this is better?</p>
+
+```
+fn main() {
+    let s1 = String::from("hello");
+    // We pass a reference (&s1) instead of the whole string
+    let len = calculate_length(&s1); 
+    
+    println!("The length of '{s1}' is {len}.");
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+
+```
