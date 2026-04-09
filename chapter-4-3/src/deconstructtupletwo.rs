@@ -1,5 +1,5 @@
 fn main() {
-    let s1 = String::from("hello");
+    let s1 = String::from("Rust deconstruct");
     // We pass a reference (&s1) instead of the whole string
     let len = calculate_length(&s1); 
     
