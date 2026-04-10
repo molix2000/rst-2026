@@ -204,3 +204,33 @@ fn calculate_length(s: &String) -> usize {
 }
 
 ```
+
+### Ownership:</p>
+
+One of the most important aspects of Rust, every thing must by owned by some one only. </p>
+Here below, one can see that the person structure was obtaining a value initially, then it passed the ownership to the save_person, the latter saved the value to the database. </p>
+
+If one wants or needs to call the value of  the structure, an error would be encounterred. To correct or provide an alternative one can create a return value in the save_person fn, this would lead to the ability to re-assign the person structure value to person two. </p> Thus facilitating to it to be used within the println! macro.</p>
+
+```
+fn struct_handle() {
+
+    let person = get_person();
+    let person2 = save_person(person);
+    println!("Name= {}", person2.name);
+}
+
+fn save_person(person: Person){
+
+    DB::write(person);
+    return person;
+}
+fn get_person (name:String) -> person {
+
+    println!("Please input person name");
+    person {
+        name: stdin.read_line().unwrap(),
+        job: "Software Engineer".to_string(),
+    }
+
+}

@@ -1,3 +1,5 @@
+use std::io::{self, Write};
+
 fn main() {
     // this should later be called multi_mut_example() //
     let mut x = 1;
@@ -11,6 +13,30 @@ fn main() {
     // The line above is a reference to a location in memory, and the line below is a reference to the value at that location in memory.
     // Rust has pointers like *mut T *const T and they are regarded as unsafe. 
     // It also has smart pointers such  as Box<T> Rc<T> and Arc<T> , RefCell<T> and Mutex<T> which are safe to use.
-    let mx2 = &x;
+    //let mx2 = &x;
     println!("X = {}", mx1);
+    println!("X original - {}", x);
+
+    let person = get_person();
+    println!("Person: {} ({})", person.name, person.job);
+}
+
+fn get_person() -> Person {
+    let mut name = String::new();
+    print!("Enter name: ");
+    io::stdout().flush().unwrap();
+    io::stdin()
+        .read_line(&mut name)
+        .expect("Failed to read name");
+
+    let name = name.trim_end().to_string();
+    Person {
+        name,
+        job: "Software Engineer".to_string(),
+    }
+}
+
+struct Person {
+    name: String,
+    job: String,
 }
