@@ -57,6 +57,6 @@ fn rocess_file() -> bool {
         file.write(data.raw()).expect("Failed to close file");
         // file is closed here.
         // or one can add this statement to drop the file:
-        drop(file);
+        drop(file); // The file doesn't have ampersand because it's not a reference, it's a value that is moved into the file variable.
     }
 }
