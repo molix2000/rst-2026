@@ -234,3 +234,6 @@ fn get_person (name:String) -> person {
     }
 
 }
+
+### Heap and Stack:</p>
+Any thing with unknown length will go to heap, Box will always reside on heap segment..</P>
