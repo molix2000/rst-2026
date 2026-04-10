@@ -40,3 +40,21 @@ struct Person {
     name: String,
     job: String,
 }
+
+### Life time of a file:</p>
+Its important to know that Rust give the file a certain life time. </p>
+Below is the example that showws the life will not be byeond the parenthesis.</p>
+
+```
+
+fn rocess_file() -> bool {
+
+
+    let data = generate_data();
+    file {
+
+        let file = File::open(path).expect("Failed open");
+        file.write(data.raw()).expect("Failed to close file");
+        // file is closed here.
+    }
+}
