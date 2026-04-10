@@ -6,6 +6,7 @@ fn main() {
     // can't have a number of mutable references to the same object at the same time
     *mx1 = 2;
     // but can have multiple immutable references to the same object at the same time
+    // reason is cache coherence and race conditions.
     let mx2 = &x;
     println!("X = {}", mx1);
 }
