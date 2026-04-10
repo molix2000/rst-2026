@@ -56,5 +56,7 @@ fn rocess_file() -> bool {
         let file = File::open(path).expect("Failed open");
         file.write(data.raw()).expect("Failed to close file");
         // file is closed here.
+        // or one can add this statement to drop the file:
+        drop(file);
     }
 }
