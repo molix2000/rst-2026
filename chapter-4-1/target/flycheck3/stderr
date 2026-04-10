@@ -1,8 +1,7 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   0.770255138s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1)/Check { test: false }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-1/src/main.rs", Edition2024) }
-   0.771590166s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/chapter-4-1/target/debug/.fingerprint/chapter-4-176ef7ba7c47ce4e/bin-chapter-4`
+   1.003431713s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1)/Check { test: false }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-1/src/main.rs", Edition2024) }
+   1.003647141s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/chapter-4-1/target/debug/.fingerprint/chapter-4-176ef7ba7c47ce4e/bin-chapter-4`
 
 Caused by:
     No such file or directory (os error 2)
@@ -50,8 +49,8 @@ Stack backtrace:
   27: <unknown>
   28: __libc_start_main
   29: <unknown>
-   0.808085454s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1)/Check { test: true }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-1/src/main.rs", Edition2024) }
-   0.808176381s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/chapter-4-1/target/debug/.fingerprint/chapter-4-c97e23c14df1a535/test-bin-chapter-4`
+   1.020241408s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1)/Check { test: true }/TargetInner { name: "chapter-4", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-1/src/main.rs", Edition2024) }
+   1.020308113s  INFO prepare_target{force=false package_id=chapter-4 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-1) target="chapter-4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/chapter-4-1/target/debug/.fingerprint/chapter-4-c97e23c14df1a535/test-bin-chapter-4`
 
 Caused by:
     No such file or directory (os error 2)

@@ -41,22 +41,14 @@ struct Person {
     job: String,
 }
 
-### Life time of a file:</p>
-Its important to know that Rust give the file a certain life time. </p>
-Below is the example that showws the life will not be byeond the parenthesis.</p>
+//### Life time of a file:</p>
+//Its important to know that Rust give the file a certain life time. </p>
+//Below is the example that showws the life will not be byeond the parenthesis.</p>
 
-```
-
-fn rocess_file() -> bool {
+//```
 
 
-    let data = generate_data();
-    file {
-
-        let file = File::open(path).expect("Failed open");
-        file.write(data.raw()).expect("Failed to close file");
-        // file is closed here.
-        // or one can add this statement to drop the file:
-        drop(file); // The file doesn't have ampersand because it's not a reference, it's a value that is moved into the file variable.
-    }
+fn generate_data() -> String {
+   let gen_data = String::from("Rust Data");
+   gen_data
 }
