@@ -52,3 +52,17 @@ fn generate_data() -> String {
    let gen_data = String::from("Rust Data");
    gen_data
 }
+
+fn borrower() {
+  let sv1 = String::from("Rust ST1");
+  let len = calculate_length(&sv1);
+  println!("The length of '{sv1}' is {len}.");
+}
+
+fn calculate_length(sv1: &String) -> usize {
+    sv1.len()
+}
+
+
+
+
