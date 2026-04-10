@@ -241,3 +241,5 @@ Any thing with unknown length will go to heap, Box will always reside on heap se
 ### Clone: </p>
 Can be different things to different objects, one must read about what it will to the specific object in question.</p>
 
+#### Reference to topic list:
+[Multimple Rust topics with diagrams](https://www.youtube.com/watch?v=zfb1y8yn8QI)
