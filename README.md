@@ -237,3 +237,7 @@ fn get_person (name:String) -> person {
 
 ### Heap and Stack:</p>
 Any thing with unknown length will go to heap, Box will always reside on heap segment..</P>
+
+### Clone: </p>
+Can be different things to different objects, one must read about what it will to the specific object in question.</p>
+
