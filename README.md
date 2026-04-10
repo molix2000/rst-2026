@@ -243,3 +243,6 @@ Can be different things to different objects, one must read about what it will t
 
 #### Reference to topic list:
 [Multimple Rust topics with diagrams](https://www.youtube.com/watch?v=zfb1y8yn8QI)
+
+### Async Rust:</p>
+[Async-Chnges](https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/)
