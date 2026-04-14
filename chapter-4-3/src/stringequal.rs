@@ -1,4 +1,4 @@
-fn main() {
+fn stringequal() {
     let s1: String = String::from("Rust Less Risk");
     let  s2 = s1;
 
@@ -19,7 +19,7 @@ fn main() {
     let x = 5;
     makes_copy(x);
     takes_and_gives_back(s4);
-    calculate_length(s5);
+    // calculate_length(s5);
 }
 
 pub fn takes_ownership(some_string: String){

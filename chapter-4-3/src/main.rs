@@ -1,14 +1,13 @@
-mod deconstructtupletwo;
 mod stringequal;
 mod tempconvert;
 mod looper;
 mod loopmania;
+mod change;
+use change::change;
 use loopmania::loopmania;
 use looper::looper;
 use tempconvert::tempconvert;
 use stringequal::*;
-use deconstructtupletwo::deconstructtupletwo;
-use deconstructtupletwo::calculate_length;
 // use loopmania::*;
 
 fn main() {
@@ -16,5 +15,4 @@ fn main() {
     loopmania();
     looper();
     tempconvert();
-    deconstructtupletwo();
 }
