@@ -1,13 +1,11 @@
-mod stringequal;
+mod mutcomplex;
 mod tempconvert;
 mod looper;
 mod loopmania;
-mod change;
-use change::change;
+use mutcomplex::mutcomplex;
 use loopmania::loopmania;
 use looper::looper;
 use tempconvert::tempconvert;
-use stringequal::*;
 // use loopmania::*;
 
 fn main() {
@@ -15,4 +13,5 @@ fn main() {
     loopmania();
     looper();
     tempconvert();
+    mutcomplex();
 }
