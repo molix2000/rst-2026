@@ -5,7 +5,7 @@ pub fn mutabex() {
     let mut s1 = String::from("Rust String1");
     println!("S1 is {s1}"); 
     {
-          let r1 = &mut s1;
+          let _r1 = &mut s1;
     }
           let r2 = &mut s1;
           println!(" r2 is {r2}");
