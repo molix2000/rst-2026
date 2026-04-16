@@ -61,3 +61,7 @@ let managed_string = "hello".to_string();
 // OR
 let managed_string = String::from("hello");
 ```
+
+## Why String</p>
+
+[Lack of string_copy](https://medium.com/@varun-doshi/why-rust-strings-dont-implement-copy-bf1635d7a723)
