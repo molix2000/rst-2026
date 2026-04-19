@@ -1,8 +1,3 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   1.036101168s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: stale: missing "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/tempconvert.rs"
-   1.036221057s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3)/Check { test: true }/TargetInner { name: "chapter-4-3", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/main.rs", Edition2024) }
-   1.036267428s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(MissingFile { path: "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/tempconvert.rs" }))
-    Checking chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.26s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.38s
