@@ -246,3 +246,51 @@ Can be different things to different objects, one must read about what it will t
 
 ### Async Rust:</p>
 [Async-Chnges](https://emschwartz.me/async-rust-can-be-a-pleasure-to-work-with-without-send-sync-static/)
+
+## USIZE:</P>
+
+Reason,Explanation
+Portability,"Using u64 for an index on a 32-bit machine would be inefficient (and potentially impossible to map to memory). Using u32 on a 64-bit machine would limit your collections to roughly 4GB, even if you have 32GB of RAM."
+Type Safety,Rust is very strict about types. You cannot use a u32 to index a vector without explicitly casting it (as usize). This prevents accidental logic errors when moving code between different CPU architectures.
+
+In Rust, `usize` is the pointer-sized unsigned integer type. Its size is not fixed; instead, it depends on the architecture of the computer your code is running on. 
+
+If you are on a 64-bit system, `usize` is 64 bits wide. On a 32-bit system, it is 32 bits wide. This flexibility is what makes it essential for memory-related operations.
+
+---
+
+## 1. Indexing Collections
+The most common use for `usize` is indexing into arrays, vectors, and other collections. Rust requires `usize` for indexing to ensure that the index can theoretically address any memory location available on the specific hardware.
+
+```rust
+let fruits = vec!["apple", "banana", "cherry"];
+let index: usize = 1; 
+
+// This works because index is usize
+println!("{}", fruits[index]); 
+```
+
+## 2. Representing Sizes and Lengths
+Any function that returns the size of an object or the number of elements in a container will return a `usize`. This includes:
+* `.len()` on strings and vectors.
+* `std::mem::size_of::<T>()`, which tells you how many bytes a type occupies in memory.
+
+
+
+## 3. Pointer Arithmetic and Offsets
+Because `usize` is guaranteed to be big enough to hold the memory address of any location on the target architecutre, it is used when performing low-level memory operations. If you are working with raw pointers or calculating offsets in memory, `usize` is the standard unit.
+
+---
+
+## Why not just use `u32` or `u64`?
+
+You might wonder why we don't just use a standard 64-bit integer everywhere. There are two main reasons:
+
+| Reason | Explanation |
+| :--- | :--- |
+| **Portability** | Using `u64` for an index on a 32-bit machine would be inefficient (and potentially impossible to map to memory). Using `u32` on a 64-bit machine would limit your collections to roughly 4GB, even if you have 32GB of RAM. |
+| **Type Safety** | Rust is very strict about types. You cannot use a `u32` to index a vector without explicitly casting it (`as usize`). This prevents accidental logic errors when moving code between different CPU architectures. |
+
+---
+
+> **Note:** While `usize` is great for memory and indexing, it shouldn't be used for general-purpose math (like calculating a user's age or a high score) unless that value is directly tied to the size of data in memory. For general math, `i32` or `u64` are usually better choices because their sizes are predictable across all platforms.

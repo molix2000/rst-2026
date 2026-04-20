@@ -4,6 +4,7 @@ mod loopmania;
 mod mutabex;
 mod mutatext;
 mod mutcomplex;
+mod usizer;
 use dangle::dangle;
 use dangle::dangles;
 use looper::looper;
@@ -11,6 +12,7 @@ use loopmania::loopmania;
 use mutabex::mutabex;
 use mutatext::mutatext;
 use mutcomplex::mutcomplex;
+use usizer::*;
 // use loopmania::*;
 
 fn main() {
@@ -21,4 +23,5 @@ fn main() {
     mutabex();
     mutatext();
     dangle();
+    usizer();
 }
