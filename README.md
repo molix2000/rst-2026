@@ -294,3 +294,58 @@ You might wonder why we don't just use a standard 64-bit integer everywhere. The
 ---
 
 > **Note:** While `usize` is great for memory and indexing, it shouldn't be used for general-purpose math (like calculating a user's age or a high score) unless that value is directly tied to the size of data in memory. For general math, `i32` or `u64` are usually better choices because their sizes are predictable across all platforms.
+
+### chapter-4-3 / experimenter01.rs:</p>
+
+There is an interesting set of changes that look into values being passed from a vector. 
+
+Reviewing `experimenter01.rs` now to identify the vector return issue and suggest the correct fix.
+
+Read [](file:///home/devops/Documents/source-code/rst-2026/chapter-4-3/src/experimenter01.rs)
+
+I found the compile errors and the function call mismatch. Now I’m correcting the function so it accepts `vec01`, iterates by index, prints each value, and returns the collected results.
+
+Replacing 19 lines with 18 lines in [](file:///home/devops/Documents/source-code/rst-2026/chapter-4-3/src/experimenter01.rs)
+
+
+```
+
+```
+I’ve updated the file and am verifying it compiles cleanly.
+
+Ran terminal command:  cd /home/devops/Documents/source-code/rst-2026/chapter-4-3/src && rustc experimenter01.rs -o /tmp/experimenter01_test && /tmp/experimenter01_test
+
+## Fix applied
+
+The code in experimenter01.rs is now corrected to:
+
+- accept `vec01` by reference
+- iterate through each position with `enumerate()`
+- print each item and its index
+- return the values as a `Vec<String>`
+
+## Result
+
+The program now outputs:
+
+- `position 0 = Toyota`
+- `position 1 = Mitsubishi`
+- `position 2 = Mazda`
+
+and returns:
+
+- `["Toyota", "Mitsubishi", "Mazda"]`
+
+If you want the function to return the original types instead of `String`, You can adjust it to return `Vec<&T>` instead.
+
+Example:
+
+```
+fn experimenter01(vec01: &Vec<&str>) -> Vec<&str> {
+    for (i, &item) in vec01.iter().enumerate() {
+        println!("position {} = {}", i, item);
+    }
+    vec01.clone()  // Returns a copy of the vector with &str elements
+}
+
+```
