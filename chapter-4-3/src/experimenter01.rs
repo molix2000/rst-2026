@@ -1,17 +1,17 @@
-pub fn main(){
-
-  
+pub fn main() {
     let vec01 = vec!["Toyota", "Mitsubishi", "Mazda"];
-  
-    display_vec_position_value();
+
+    let values = display_vec_position_value(&vec01);
+    println!("Returned values: {:?}", values);
 }
 
-pub fn display_vec_position_value(ve1: vec) -> usize {
+pub fn display_vec_position_value<T: std::fmt::Display + Clone>(ve1: &[T]) -> Vec<String> {
+    let mut values = Vec::new();
 
-       while position < ve1.len(){
+    for (position, value) in ve1.iter().enumerate() {
+        println!("position {} = {}", position, value);
+        values.push(value.to_string());
+    }
 
-           println!("{} ": vex1[position]); 
-       }
-      
-
+    values
 }
