@@ -16,3 +16,7 @@ Some other sources:</p>
 * rust-autogard</p>
 * wyrm</p>
 * RustaCuda</p>
+
+## References:
+
+[Neural network construction](https://www.djamware.com/post/building-your-first-neural-network-in-rust-with-burn)
