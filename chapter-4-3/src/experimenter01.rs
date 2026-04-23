@@ -1,10 +1,10 @@
-pub fn main() {
+pub fn experimenter01() {
     let vec01 = vec!["Toyota", "Mitsubishi", "Mazda"];
 
     let values = display_vec_position_value(&vec01);
     println!("Returned values: {:?}", values);
-  //  let elements = display_vec_elements_string(&vec01);
-  //  println!("Returned elements: {:?}", elements);
+    //  let elements = display_vec_elements_string(&vec01);
+    //  println!("Returned elements: {:?}", elements);
 }
 
 pub fn display_vec_position_value<T: std::fmt::Display + Clone>(ve1: &[T]) -> Vec<String> {
