@@ -5,15 +5,16 @@ pub fn main() {
    let zlice = String::from("Rust Zlice");
    let fist = &zlice[0..4];
    let last = &zlice[5..10];
-   println!(" The 1st of zlice is {fist}, the last of Zlice is {last}");
+   let tester = &zlice[..];
+   println!(" The 1st of zlice is {fist}, the last of Zlice is {last}, tester is {tester}");
 
 }
 
-pub fn fstwrd(s: &String)-> usize {
+pub fn fstwrd(s: &String)-> (&str) {
     let by = s.as_bytes();
     for (i,&item) in by.iter().enumerate() {
        if item == b' ' {
-           return i;
+           return i &s[0..i];
        }
     }
   s.len()
