@@ -12,6 +12,8 @@ pub fn main() {
 
 pub fn fstwrd(s: &String)-> (&str) {
     let by = s.as_bytes();
+    let slize2 = &a[1..3];
+    assert_eq!(slice,& [2,3]);
     for (i,&item) in by.iter().enumerate() {
        if item == b' ' {
            return i &s[0..i];

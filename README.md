@@ -440,3 +440,8 @@ Key points about iter():
 Borrows each element (returns references)
 Useful when you don't need to consume/move the data
 Returns &T for each element. 
+
+
+
+## Learning on line: 
+   [exercism]: (https://exercism.org/tracks/rust)
