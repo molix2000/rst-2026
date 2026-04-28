@@ -392,3 +392,30 @@ for (i, &item) in by.iter().enumerate() {
 
 ```
 
+This example:
+
+```
+
+for (i, &item) in by.iter().enumerate() {
+    if item == b' ' {  // b' ' is a space byte (32)
+        return i;
+    }
+}
+
+```
+1. What i refers to:
+
+i is the index (position) of each element
+Starts at 0 and increments: 0, 1, 2, 3, etc.
+In this context: if space is at position 5, i would be 5
+2. What &item refers to:
+
+&item is a reference to each individual byte
+item (without the &) would be the actual byte value (a u8 number)
+The & in the pattern &item dereferences it, so you can use item directly as a number, not as a reference
+Each byte is a number: 'H'=72, 'e'=101, 'l'=108, ' '=32
+3. What enumerate() does:
+
+Takes an iterator and pairs each element with its index
+Converts: [72, 101, 108, 108, 111] → [(0, 72), (1, 101), (2, 108), (3, 108), (4, 111)]
+So you get both the position AND the value in one loop
