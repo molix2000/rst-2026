@@ -338,6 +338,8 @@ and returns:
 
 If you want the function to return the original types instead of `String`, You can adjust it to return `Vec<&T>` instead.
 
+
+
 Example:
 
 ```
@@ -349,3 +351,44 @@ fn experimenter01(vec01: &Vec<&str>) -> Vec<&str> {
 }
 
 ```
+
+## More on slices:</p>
+
+s.as_bytes() returns a byte slice (&[u8]) where each byte represents part of the UTF-8 encoded string.
+
+The key distinction:
+
+ASCII characters (a-z, 0-9, etc.) = 1 byte each
+Unicode characters (emoji, accented letters, etc.) = 2-4 bytes each
+
+```
+let s = "Hello";
+let bytes = s.as_bytes();
+// bytes = [72, 101, 108, 108, 111]  ← each ASCII char is 1 byte
+
+let s = "Café";
+let bytes = s.as_bytes();
+// bytes = [67, 97, 102, 233]  ← 'é' takes 2 bytes! 
+// NOT [67, 97, 102, 233] as separate chars
+
+```
+
+So it's not "one byte per character"—it's one byte per byte of UTF-8 encoding. Most characters you type are 1 byte, but accented letters, emojis, and other Unicode characters use multiple bytes.
+
+If you want the actual character count, use s.len() (returns byte length) vs s.chars().count() (returns character count):
+
+
+```
+let s = "Hello World";
+let by = s.as_bytes();
+for (i, &item) in by.iter().enumerate() {
+    println!("Index: {}, Byte: {}, Char: {}", i, item, item as char);
+}
+// Output:
+// Index: 0, Byte: 72, Char: H
+// Index: 1, Byte: 101, Char: e
+// ...
+// Index: 5, Byte: 32, Char:   (space found, returns 5)
+
+```
+
