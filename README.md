@@ -419,3 +419,24 @@ Each byte is a number: 'H'=72, 'e'=101, 'l'=108, ' '=32
 Takes an iterator and pairs each element with its index
 Converts: [72, 101, 108, 108, 111] → [(0, 72), (1, 101), (2, 108), (3, 108), (4, 111)]
 So you get both the position AND the value in one loop
+
+## iter(): </p>
+
+iter() is used on collection types that store multiple elements. Here are the most common:
+
+Built-in Collections:
+
+Slices - &[T], &str
+Arrays - [T; n]
+Vectors - Vec<T>
+HashMaps - HashMap<K, V>
+HashSets - HashSet<T>
+BTreeMap - BTreeMap<K, V>
+BTreeSet - BTreeSet<T>
+VecDeque - VecDeque<T>
+LinkedList - LinkedList<T>
+Key points about iter():
+
+Borrows each element (returns references)
+Useful when you don't need to consume/move the data
+Returns &T for each element. 
