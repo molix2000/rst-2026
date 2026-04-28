@@ -9,3 +9,4 @@
 * [turbovision]: (https://github.com/aovestdipaperino/turbo-vision-4-rust.git)
 * [rustnl]: (https://github.com/rustnl)
 * [bruto]: (https://crates.io/crates/bruto-ide/0.2.0/dependencies)
+* [leptops]: (https://github.com/leptos-rs/leptos.git)
