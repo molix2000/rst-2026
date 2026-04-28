@@ -8,7 +8,7 @@ pub fn main() {
 
 pub fn fstwrd(s: &String)-> usize {
     let by = s.as_bytes();
-    for (i,item) in bytes.iter().enumerate() {
+    for (i,&item) in by.iter().enumerate() {
        if item == b' ' {
            return i;
        }
