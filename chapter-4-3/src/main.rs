@@ -1,5 +1,6 @@
 mod dangle;
 mod experimenter01;
+mod first_word;
 mod looper;
 mod loopmania;
 mod mutabex;
@@ -10,6 +11,7 @@ use dangle::dangle;
 use dangle::dangles;
 use experimenter01::display_vec_position_value;
 use experimenter01::experimenter01;
+use first_word::first_word;
 use looper::looper;
 use loopmania::loopmania;
 use mutabex::mutabex;
@@ -19,6 +21,7 @@ use usizer::*;
 // use loopmania::*;
 
 fn main() {
+    let stern = String::from("Rust Models");
     println!("loopmania start");
     loopmania();
     looper();
@@ -28,4 +31,5 @@ fn main() {
     dangle();
     usizer();
     experimenter01();
+    first_word(&stern);
 }
