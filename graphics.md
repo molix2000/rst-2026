@@ -10,3 +10,5 @@
 * [rustnl]: (https://github.com/rustnl)
 * [bruto]: (https://crates.io/crates/bruto-ide/0.2.0/dependencies)
 * [leptops]: (https://github.com/leptos-rs/leptos.git)
+* [Dixios]: (https://github.com/DioxusLabs/dioxus.git)
+* [Zola]: (https://github.com/getzola/zola.git)
