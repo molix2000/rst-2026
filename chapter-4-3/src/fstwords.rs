@@ -28,7 +28,6 @@ fn first_word(s: &str) -> &str {
         }
     }
     
-  
-
-    println!("the first word is: {word}");
+    println!("the first word is");
+    &s[..]
 }
