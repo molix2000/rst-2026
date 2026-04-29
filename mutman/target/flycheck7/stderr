@@ -1,9 +1,5 @@
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   0.912562287s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: false }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
-   0.912606343s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-11fecde31a69de4a/bin-mutman`
+   0.026241043s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: false }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
+   0.026287191s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-11fecde31a69de4a/bin-mutman`
 
 Caused by:
     No such file or directory (os error 2)
@@ -51,8 +47,8 @@ Stack backtrace:
   27: <unknown>
   28: __libc_start_main
   29: <unknown>
-   0.941875697s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: true }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
-   0.941912549s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-7fdbabd4685f1de0/test-bin-mutman`
+   0.052226305s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint: fingerprint error for mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)/Check { test: true }/TargetInner { name: "mutman", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/mutman/src/main.rs", Edition2024) }
+   0.052273843s  INFO prepare_target{force=false package_id=mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman) target="mutman"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/source-code/rst-2026/mutman/target/debug/.fingerprint/mutman-7fdbabd4685f1de0/test-bin-mutman`
 
 Caused by:
     No such file or directory (os error 2)
@@ -101,6 +97,6 @@ Stack backtrace:
   28: __libc_start_main
   29: <unknown>
     Checking mutman v0.1.0 (/home/devops/Documents/source-code/rst-2026/mutman)
-error: could not compile `mutman` (bin "mutman") due to 2 previous errors
-warning: build failed, waiting for other jobs to finish...
 error: could not compile `mutman` (bin "mutman" test) due to 2 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `mutman` (bin "mutman") due to 2 previous errors
