@@ -15,5 +15,15 @@ fn main(){
        email: String::from("samji234@localhost.local"),
        sign_in_count: 1,
     };
+   user1.email = String::from("2ndemail@localhost.local");
+}
+
+fn build_user (email: String, username: String) -> {
+   User{
+     active: true,
+     username: username,
+     email: email,
+     sign_in_count: 1,
+   }
 
 }
