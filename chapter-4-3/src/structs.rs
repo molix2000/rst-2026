@@ -18,7 +18,7 @@ fn main() {
         email: &String::from("samji234@localhost.local"),
         sign_in_count: 1,
     };
-    user1.email = String::from("2ndemail@localhost.local");
+    user1.email = &String::from("2ndemail@localhost.local");
 
     let user2 = User {
         active: user1.active,
