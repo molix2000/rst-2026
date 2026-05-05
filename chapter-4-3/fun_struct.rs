@@ -1,3 +1,12 @@
+struct User {
+        active: bool,
+        username: String,
+        email: String,
+        sign_in_count: u64,
+
+}
+
+
 pub fn main(){
     let user1_email = String::from("devops@localhost.local");
     let user1_username = String::from("devops");
@@ -12,6 +21,6 @@ pub fn build_user(email: String, username: String) -> User {
            active: true,
            username: username,
            email: email,
-           signe_in_count: 1,
-        };
+           sign_in_count: 1,
+        }
 }
