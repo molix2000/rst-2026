@@ -1,3 +1,4 @@
+mod rata;
 mod dangle;
 mod experimenter01;
 mod first_word;
@@ -7,6 +8,8 @@ mod mutabex;
 mod mutatext;
 mod mutcomplex;
 mod usizer;
+use rata::rata;
+use rata::run;
 use dangle::dangle;
 use dangle::dangles;
 use experimenter01::display_vec_position_value;
@@ -32,4 +35,5 @@ fn main() {
     usizer();
     experimenter01();
     first_word(&stern);
+    rata();
 }
