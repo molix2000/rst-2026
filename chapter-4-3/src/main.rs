@@ -1,3 +1,4 @@
+mod struct02;
 mod rata;
 mod dangle;
 mod experimenter01;
@@ -21,6 +22,7 @@ use mutabex::mutabex;
 use mutatext::mutatext;
 use mutcomplex::mutcomplex;
 use usizer::*;
+use struct02::*;
 // use loopmania::*;
 
 fn main() {
@@ -36,4 +38,5 @@ fn main() {
     experimenter01();
     first_word(&stern);
     rata();
+    struct02();
 }

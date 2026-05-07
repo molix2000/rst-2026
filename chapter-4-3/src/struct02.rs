@@ -1,0 +1,14 @@
+struct  Equal_Band {
+  name: String,
+  address: String,
+}
+
+pub fn struct02() {
+    let eb = Equal_Band {
+      name: String::from("Test Subject A"),
+      address: String::from("299 harley cresent, fedora avenue, rockford"),
+    };
+
+  println!("eb name is {}", eb.name);
+  println!("The eb Address is {}", eb.address);
+}

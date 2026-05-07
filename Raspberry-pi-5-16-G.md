@@ -416,3 +416,7 @@ Contributors 1
     molixrawdi Molix
 
 Footer
+
+### Open Claw on Raspberry Pi 5 16 gb:</p>
+
+[vide refrence on implementation](https://youtu.be/LhxczQf_zEk?si=IP1MLUAc8q_Otulx)
