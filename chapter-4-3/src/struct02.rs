@@ -12,15 +12,14 @@ pub fn struct02() {
   println!("eb name is {}", eb.name);
   println!("The eb Address is {}", eb.address);
 }
-
-fn main() {
+pub fn main() {
    let width = 30;
   let height = 50;
 
   println!(" The area of the rectangle is {}", area(width , height));
 } 
 
-fn area(width: u32, height: u32) -> u32 {
+pub fn area(width: u32, height: u32) -> u32 {
     width * height
 }
 
