@@ -14,9 +14,8 @@ pub fn struct02() {
 }
 pub fn main() {
    let width = 30;
-  let height = 50;
-
-  println!(" The area of the rectangle is {}", area(width , height));
+   let height = 50;
+   println!(" The area of the rectangle is {}", area(width , height));
 } 
 
 pub fn area(width: u32, height: u32) -> u32 {
