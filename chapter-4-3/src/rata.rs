@@ -1,9 +1,9 @@
 use color_eyre::Result;
 use crossterm::event::{self, Event};
 use crossterm::terminal::{disable_raw_mode, enable_raw_mode};
-use std::io::{self, Write};
-use ratatui::{DefaultTerminal};
 use ratatui::backend::CrosstermBackend;
+use ratatui::DefaultTerminal;
+use std::io::{self, Write};
 pub fn rata() -> Result<()> {
     color_eyre::install()?;
     let terminal = ratatui::init();

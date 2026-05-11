@@ -4,11 +4,11 @@ struct Equal_Band {
 }
 
 struct Rectangle {
-   width : u32,
-   height : u32,
+    width: u32,
+    height: u32,
 }
 
-pub fn main() {
+pub fn struct02() {
     let eb = Equal_Band {
         name: String::from("Test Subject A"),
         address: String::from("299 harley cresent, fedora avenue, rockford"),
@@ -21,10 +21,12 @@ pub fn main() {
         width: 30,
         height: 50,
     };
-    println!(" The area of the rectangle is {}", area(rect.width, rect.height));
-} 
+    println!(
+        " The area of the rectangle is {}",
+        area(rect.width, rect.height)
+    );
+}
 
 pub fn area(width: u32, height: u32) -> u32 {
     width * height
 }
-
