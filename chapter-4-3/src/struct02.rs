@@ -3,6 +3,7 @@ struct Equal_Band {
     address: String,
 }
 
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
@@ -25,6 +26,8 @@ pub fn main() {
         " The area of the rectangle is {}",
         area(rect.width, rect.height)
     );
+    dbg!(&rect);
+    println!("The Struct is {:#?}",rect);
 }
 
 pub fn area(width: u32, height: u32) -> u32 {
