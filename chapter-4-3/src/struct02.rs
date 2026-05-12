@@ -8,7 +8,7 @@ struct Rectangle {
     height: u32,
 }
 
-pub fn struct02() {
+pub fn main() {
     let eb = Equal_Band {
         name: String::from("Test Subject A"),
         address: String::from("299 harley cresent, fedora avenue, rockford"),
@@ -16,10 +16,10 @@ pub fn struct02() {
 
     println!("eb name is {}", eb.name);
     println!("The eb Address is {}", eb.address);
-
+    let scale = 2;
     let rect = Rectangle {
-        width: 30,
-        height: 50,
+        width: dbg!(30 * scale),
+        height: dbg!(50 * scale),
     };
     println!(
         " The area of the rectangle is {}",
