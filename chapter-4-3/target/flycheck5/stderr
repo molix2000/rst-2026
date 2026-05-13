@@ -1,14 +1,108 @@
-   0.337374972s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/struct02.rs"
-   0.337434343s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-e8c78652104245f5/dep-bin-chapter-4-3"
-   0.337442676s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1778541731, nanos: 273722871 } < FileTime { seconds: 1778549769, nanos: 985508217 }
-   0.337738568s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3)/Check { test: false }/TargetInner { name: "chapter-4-3", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/main.rs", Edition2021) }
-   0.337808679s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/devops/Documents/source-code/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-e8c78652104245f5/dep-bin-chapter-4-3", reference_mtime: FileTime { seconds: 1778541731, nanos: 273722871 }, stale: "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/struct02.rs", stale_mtime: FileTime { seconds: 1778549769, nanos: 985508217 } }))
-   0.356941391s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: stale: changed "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/struct02.rs"
-   0.356966965s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:           (vs) "/home/devops/Documents/source-code/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-87a7f0a87d5e3859/dep-test-bin-chapter-4-3"
-   0.356974188s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1778541731, nanos: 273722871 } < FileTime { seconds: 1778549769, nanos: 985508217 }
-   0.357039781s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: fingerprint dirty for chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3)/Check { test: true }/TargetInner { name: "chapter-4-3", doc: true, ..: with_path("/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/main.rs", Edition2021) }
-   0.357065429s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/devops/Documents/source-code/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-87a7f0a87d5e3859/dep-test-bin-chapter-4-3", reference_mtime: FileTime { seconds: 1778541731, nanos: 273722871 }, stale: "/home/devops/Documents/source-code/rst-2026/chapter-4-3/src/struct02.rs", stale_mtime: FileTime { seconds: 1778549769, nanos: 985508217 } }))
-    Checking chapter-4-3 v0.1.0 (/home/devops/Documents/source-code/rst-2026/chapter-4-3)
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   1.291375818s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3)/Check { test: false }/TargetInner { name: "chapter-4-3", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3/src/main.rs", Edition2021) }
+   1.294070710s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-64307012632da670/bin-chapter-4-3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace_rs::backtrace::libunwind::trace
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/../../backtrace/src/backtrace/libunwind.rs:117:9
+   1: std::backtrace_rs::backtrace::trace_unsynchronized::<<std::backtrace::Backtrace>::create::{closure#0}>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/../../backtrace/src/backtrace/mod.rs:66:14
+   2: <std::backtrace::Backtrace>::create
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/backtrace.rs:331:13
+   3: cargo_util::paths::read_bytes
+   4: cargo_util::paths::read
+   5: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   6: cargo::core::compiler::fingerprint::prepare_target
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{closure#0}
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:59:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+   1.509974911s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3)/Check { test: true }/TargetInner { name: "chapter-4-3", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3/src/main.rs", Edition2021) }
+   1.510159616s  INFO prepare_target{force=false package_id=chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3) target="chapter-4-3"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3/target/debug/.fingerprint/chapter-4-3-62b83b98897d02f6/test-bin-chapter-4-3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace_rs::backtrace::libunwind::trace
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/../../backtrace/src/backtrace/libunwind.rs:117:9
+   1: std::backtrace_rs::backtrace::trace_unsynchronized::<<std::backtrace::Backtrace>::create::{closure#0}>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/../../backtrace/src/backtrace/mod.rs:66:14
+   2: <std::backtrace::Backtrace>::create
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/backtrace.rs:331:13
+   3: cargo_util::paths::read_bytes
+   4: cargo_util::paths::read
+   5: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   6: cargo::core::compiler::fingerprint::prepare_target
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
+  19: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
+  20: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{closure#0}
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
+  23: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
+  24: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:59:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+    Checking chapter-4-3 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/old-rst-2026-bk/rst-2026/chapter-4-3)
 error: could not compile `chapter-4-3` (bin "chapter-4-3") due to 1 previous error; 10 warnings emitted
 warning: build failed, waiting for other jobs to finish...
 error: could not compile `chapter-4-3` (bin "chapter-4-3" test) due to 1 previous error; 10 warnings emitted
