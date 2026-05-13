@@ -9,6 +9,9 @@ impl Rectangle {
     fn cando(&self, others: &Rectangle) -> bool {
         self.height > others.height && self.width > others.width
     }
+    fn width(&self) -> bool {
+       self.width > 0
+    }
 }
 
 fn main() {
@@ -26,4 +29,6 @@ fn main() {
         "The outcome of comparing rec1 and rec2 via can do is {}",
         rec1.cando(&rec2)
     );
+
+    println!("The width method result under impl is {} ", rec1.width());
 }
