@@ -22,6 +22,11 @@ impl Rectangle {
      self.height * self.width
   }
 
+  fn can_hold(&self, other: &Rectangle)-> bool {
+     self.height > other.height && self.width > other.width
+  
+  }
+
 }
 
 fn main() {
@@ -58,6 +63,7 @@ fn main() {
     println!("Areaz2 output with rec2  is {}",rec2.areaz2());
     println!("Areaz3 output , with rec4 is {}", rec4.areaz3());
     println!("Areaz4 output , with rec3 is {}", rec3.areaz4());
+    println!("The comparison result for the can_hold is {}",rec1.can_hold(&rec2)); 
 }
 
 fn area(width:u32, height: u32)-> u32{
