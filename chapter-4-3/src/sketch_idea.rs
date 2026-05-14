@@ -11,6 +11,17 @@ impl Rectangle {
     }
     fn width(&self) -> bool {
        self.width > 0
+    }   
+}
+
+
+impl Rectangle {
+
+    fn square(size: u32) -> Self {
+       Self {
+         height: size,
+         width: size,
+       }
     }
 }
 
@@ -29,6 +40,8 @@ fn main() {
         "The outcome of comparing rec1 and rec2 via can do is {}",
         rec1.cando(&rec2)
     );
-
+    let esq = Rectangle::square(40);
     println!("The width method result under impl is {} ", rec1.width());
+    
+    println!("The square is this {:#?}",esq);
 }
