@@ -29,6 +29,16 @@ impl Rectangle {
 
 }
 
+impl Rectangle {
+  fn square(size: u32) -> Self {
+     Self{
+          width:size,
+          height: size,
+     }
+  }
+
+}
+
 fn main() {
     let scale = 3;
     let rec1 = Rectangle {
@@ -63,7 +73,10 @@ fn main() {
     println!("Areaz2 output with rec2  is {}",rec2.areaz2());
     println!("Areaz3 output , with rec4 is {}", rec4.areaz3());
     println!("Areaz4 output , with rec3 is {}", rec3.areaz4());
-    println!("The comparison result for the can_hold is {}",rec1.can_hold(&rec2)); 
+    println!("The comparison result for the can_hold is {}",rec1.can_hold(&rec2));
+    let esq = Rectangle::square(3);
+    println!("ESQ is with value {:#?} {:?}", esq, esq);
+    println!("And Esq second value in more organized display is {:?}",esq );
 }
 
 fn area(width:u32, height: u32)-> u32{
