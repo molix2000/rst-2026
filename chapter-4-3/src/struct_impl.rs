@@ -19,6 +19,13 @@ impl Rectangle {
     }
 }
 
+
+impl Rectangle {
+
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
 fn main() {
     let rec1 = Rectangle {
         height: 46,
@@ -33,4 +40,5 @@ fn main() {
     let esq = Rectangle::square(3);
     println!("esq value is {:?}", esq);
     println!("The can_hold is with result {}", rec1.can_hold(&rec2));
+    println!("The area of rec1 is {}", rec1.area());
 }
