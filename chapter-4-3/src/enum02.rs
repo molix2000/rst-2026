@@ -1,22 +1,23 @@
-enum msg {
+#[derive(Debug)]
+enum Msg {
 
      Quit,
      Move {x:i32, y:i32},
-     Write (String),
+     Write((String)),
      ChangeColor(i32, i32,i32),
 
 }
 
 
-fn call(&self) {
+//fn call(&self) {
      // Quit;
      // Move();
      // Write();
 
 
-}
+//}
 
-impl msg {
+impl Msg {
 
    fn call(&self) {
 
@@ -25,6 +26,6 @@ impl msg {
 
 fn main() {
    
-     let m = msg::Write(String::from("Hello"));
-
+     let m = Msg::Write(String::from("Hello"));
+     println!("The value of m is {:#?}", m);
 }
