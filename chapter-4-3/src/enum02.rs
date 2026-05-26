@@ -28,4 +28,6 @@ fn main() {
    
      let m = Msg::Write(String::from("Hello"));
      println!("The value of m is {:#?}", m);
+     let n = (Msg::Move {x:10, y:50}.call());
+     println!("The value of n is {:#?}", n);
 }

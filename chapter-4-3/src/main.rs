@@ -9,6 +9,7 @@ mod mutcomplex;
 mod rata;
 mod struct02;
 mod usizer;
+mod enum02;
 use dangle::dangle;
 use dangle::dangles;
 use experimenter01::display_vec_position_value;
