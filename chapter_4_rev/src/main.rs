@@ -28,5 +28,9 @@ fn main() {
       .read_line(&mut guess2) 
       .expect("There was an error with the input");
     println!("Guess one was {guess}, Guess2 was {guess2}");
+    
 
+    let mut guess03 = String::new();
+    io::stdin().read_line(&mut guess03).expect("The inout has an error");
+    println!("The guess03 is {guess03}");
 }
