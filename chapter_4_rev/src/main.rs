@@ -33,4 +33,9 @@ fn main() {
     let mut guess03 = String::new();
     io::stdin().read_line(&mut guess03).expect("The inout has an error");
     println!("The guess03 is {guess03}");
+
+    println!("Guess numbers");
+    let x = 43;
+    let y = 33;
+    println!("let x + y = {}, let x - y = {}", x+y, x - y);
 }
