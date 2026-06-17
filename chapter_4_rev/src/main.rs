@@ -38,4 +38,9 @@ fn main() {
     let x = 43;
     let y = 33;
     println!("let x + y = {}, let x - y = {}", x+y, x - y);
+    
+    let banner_1 = String::from("This is a Rust revised section");
+    println!("The target string banner_1 is {}", banner_1);
+
+
 }
