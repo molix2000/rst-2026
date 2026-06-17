@@ -10,8 +10,8 @@ docker run -it --name rust-dev \
   ## docker start -ai rust-dev
 
   ## For the newer Rust image I do this as it will not have bash
-
-  docker run -it --name rust-dev \
-  -v ${Rust-path-folder}/rst-2026:/workspace \
-  --entrypoint /bin/sh \
-  ubuntu/rust:1.93-26.04_edge
+  ## ONLY uncomment this if you wish to work with the 1.93, be warned there is no bash there
+  # docker run -it --name rust-dev \
+  # -v ${Rust-path-folder}/rst-2026:/workspace \
+  # --entrypoint /bin/sh \
+  # ubuntu/rust:1.93-26.04_edge
