@@ -1,52 +1,38 @@
 use std::io;
+use std::cmp::Ordering;
+use rand::Rng;
 
 fn main() {
-    println!("Revise consepts!");
-    println!("Guess a number!");
-    
-    // This now is the stage of taking in details:
 
-    let mut guess_number = String::new();
-    // Use the crate/lib to achieve this result.
-    io::stdin()
-        .read_line(&mut guess_number).expect("Failed to read a reasonable input");
+   let mut arla = String::new();
+   println!("Input a string");
+   io::stdin().read_line(&mut arla).expect("There was an error receiving the input");
+   let index: usize = arla.trim().parse().expect("There is an error with the i parse inspect");
+   println!("The index is {}",index);
 
-    println!("You have guessed the number as {}", guess_number);
-    
-    println!(" The beginning of the new chapter, enter guess");
-    
-    let mut guess = String::new();
-    let mut guess2 = String::new();
+   println!("New Chapter here");
+  
+  let mut guess = String::new();
+  println!("Guess a number?");
+  io::stdin().read_line(&mut guess).expect("This input was at error");
+  let secret_number = rand::thread_rng().gen_range(1..=100);
+  println!("Guess secret number");
+  let guess: u32 = match guess.trim().parse() {
+      Ok(num) => num,
+      Err(_) => {
+        println!("Error");
+        33
+     }
 
-    io::stdin()
-      .read_line(&mut guess)
-      .expect("Looks like there is an issue with the input format");
-    println!("The guess you enterred is {guess}");
-    
-    println!("Enter Guess2");
-    io::stdin()
-      .read_line(&mut guess2) 
-      .expect("There was an error with the input");
-    println!("Guess one was {guess}, Guess2 was {guess2}");
-    
+  };
 
-    let mut guess03 = String::new();
-    io::stdin().read_line(&mut guess03).expect("The inout has an error");
-    println!("The guess03 is {guess03}");
+  match guess.cmp(&secret_nunmber) {
+      Ordering::Greater => println!("This is greater value"),
+      Ordering::Less => println!("This is a less value"),
+      Ordering::Equal => println!("This is great"),
 
-    println!("Guess numbers");
-    let x = 43;
-    let y = 33;
-    println!("let x + y = {}, let x - y = {}", x+y, x - y);
-    
-    let banner_1 = String::from("This is a Rust revised section");
-    println!("The target string banner_1 is {}", banner_1);
-    
-    let arla = [1,2,3,4,5,6];
-      for i in 0..5 {
-          println!("This is the position!{}",arla[i]);
-      }
-      println!("This is the position after the for loop {}", arla[0]);
-
+  }
 
 }
+
+
