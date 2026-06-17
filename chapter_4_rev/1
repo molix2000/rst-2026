@@ -46,7 +46,7 @@ fn main() {
       for i in 0..5 {
           println!("This is the position!{}",arla[i]);
       }
-      println!("This is the position after the for loop {}", arla[0]);
+      println!("This is the position after the for loop {}", arla[i]);
 
 
 }
