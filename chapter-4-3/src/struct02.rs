@@ -9,7 +9,7 @@ struct Rectangle {
     height: u32,
 }
 
-pub fn main() {
+pub fn struct02() {
     let eb = Equal_Band {
         name: String::from("Test Subject A"),
         address: String::from("299 harley cresent, fedora avenue, rockford"),

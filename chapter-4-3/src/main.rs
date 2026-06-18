@@ -1,3 +1,4 @@
+mod struct_revise;
 mod dangle;
 mod experimenter01;
 mod first_word;
@@ -24,6 +25,7 @@ use rata::rata;
 use rata::run;
 use struct02::*;
 use usizer::*;
+use struct_revise::*;
 // use loopmania::*;
 
 fn main() {
