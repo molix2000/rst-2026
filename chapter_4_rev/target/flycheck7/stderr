@@ -1,6 +1,5 @@
-    Blocking waiting for file lock on package cache
-   0.290643726s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint: fingerprint error for chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev)/Check { test: false }/TargetInner { name: "chapter_4_rev", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/src/main.rs", Edition2021) }
-   0.296663331s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/target/debug/.fingerprint/chapter_4_rev-9674bfcbe4becbb1/bin-chapter_4_rev`
+   0.143551749s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint: fingerprint error for chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev)/Check { test: false }/TargetInner { name: "chapter_4_rev", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/src/main.rs", Edition2021) }
+   0.144060327s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/target/debug/.fingerprint/chapter_4_rev-9674bfcbe4becbb1/bin-chapter_4_rev`
 
 Caused by:
     No such file or directory (os error 2)
@@ -50,8 +49,8 @@ Stack backtrace:
   28: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   29: <unknown>
-   0.759700522s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint: fingerprint error for chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev)/Check { test: true }/TargetInner { name: "chapter_4_rev", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/src/main.rs", Edition2021) }
-   0.759745670s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/target/debug/.fingerprint/chapter_4_rev-11a5c4ff893e14bb/test-bin-chapter_4_rev`
+   0.529489553s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint: fingerprint error for chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev)/Check { test: true }/TargetInner { name: "chapter_4_rev", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/src/main.rs", Edition2021) }
+   0.529549183s  INFO prepare_target{force=false package_id=chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev) target="chapter_4_rev"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev/target/debug/.fingerprint/chapter_4_rev-11a5c4ff893e14bb/test-bin-chapter_4_rev`
 
 Caused by:
     No such file or directory (os error 2)
@@ -102,6 +101,6 @@ Stack backtrace:
              at ./csu/../csu/libc-start.c:360:3
   29: <unknown>
     Checking chapter_4_rev v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter_4_rev)
-error: could not compile `chapter_4_rev` (bin "chapter_4_rev") due to 3 previous errors
+error: could not compile `chapter_4_rev` (bin "chapter_4_rev") due to 2 previous errors
 warning: build failed, waiting for other jobs to finish...
-error: could not compile `chapter_4_rev` (bin "chapter_4_rev" test) due to 3 previous errors
+error: could not compile `chapter_4_rev` (bin "chapter_4_rev" test) due to 2 previous errors

@@ -1,7 +1,9 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-   1.215605988s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint: fingerprint error for ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5)/Check { test: false }/TargetInner { name: "ordering", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/src/main.rs", Edition2024) }
-   1.217097556s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/ordering-c1e1c1932c4fd49f/bin-ordering`
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   4.149253153s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint: fingerprint error for ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5)/Check { test: false }/TargetInner { name: "ordering", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/src/main.rs", Edition2024) }
+   4.149358635s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/ordering-c1e1c1932c4fd49f/bin-ordering`
 
 Caused by:
     No such file or directory (os error 2)
@@ -51,8 +53,8 @@ Stack backtrace:
   28: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   29: <unknown>
-   1.436468941s  INFO prepare_target{force=false package_id=trpl v0.2.0 target="trpl"}: cargo::core::compiler::fingerprint: fingerprint error for trpl v0.2.0/Check { test: false }/TargetInner { ..: lib_target("trpl", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/trpl-0.2.0/src/lib.rs", Edition2021) }
-   1.436551497s  INFO prepare_target{force=false package_id=trpl v0.2.0 target="trpl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/trpl-d98826e328a93d48/lib-trpl`
+   4.681939749s  INFO prepare_target{force=false package_id=trpl v0.2.0 target="trpl"}: cargo::core::compiler::fingerprint: fingerprint error for trpl v0.2.0/Check { test: false }/TargetInner { ..: lib_target("trpl", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/trpl-0.2.0/src/lib.rs", Edition2021) }
+   4.682243363s  INFO prepare_target{force=false package_id=trpl v0.2.0 target="trpl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/trpl-d98826e328a93d48/lib-trpl`
 
 Caused by:
     No such file or directory (os error 2)
@@ -103,8 +105,8 @@ Stack backtrace:
   29: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   30: <unknown>
-   1.455367280s  INFO prepare_target{force=false package_id=reqwest v0.12.28 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint error for reqwest v0.12.28/Check { test: false }/TargetInner { ..: lib_target("reqwest", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.28/src/lib.rs", Edition2021) }
-   1.455471207s  INFO prepare_target{force=false package_id=reqwest v0.12.28 target="reqwest"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/reqwest-f2eae9e40cb1eb19/lib-reqwest`
+   4.719575932s  INFO prepare_target{force=false package_id=reqwest v0.12.28 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint error for reqwest v0.12.28/Check { test: false }/TargetInner { ..: lib_target("reqwest", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.28/src/lib.rs", Edition2021) }
+   4.719707210s  INFO prepare_target{force=false package_id=reqwest v0.12.28 target="reqwest"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/reqwest-f2eae9e40cb1eb19/lib-reqwest`
 
 Caused by:
     No such file or directory (os error 2)
@@ -156,8 +158,8 @@ Stack backtrace:
   30: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   31: <unknown>
-   1.485628620s  INFO prepare_target{force=false package_id=hyper-tls v0.6.0 target="hyper_tls"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-tls v0.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hyper_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-tls-0.6.0/src/lib.rs", Edition2018) }
-   1.485677806s  INFO prepare_target{force=false package_id=hyper-tls v0.6.0 target="hyper_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/hyper-tls-c7e61fdc83198c16/lib-hyper_tls`
+   4.804596761s  INFO prepare_target{force=false package_id=hyper-tls v0.6.0 target="hyper_tls"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-tls v0.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hyper_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-tls-0.6.0/src/lib.rs", Edition2018) }
+   4.804680724s  INFO prepare_target{force=false package_id=hyper-tls v0.6.0 target="hyper_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/hyper-tls-c7e61fdc83198c16/lib-hyper_tls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -210,8 +212,8 @@ Stack backtrace:
   31: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   32: <unknown>
-   1.488469495s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="native_tls"}: cargo::core::compiler::fingerprint: fingerprint error for native-tls v0.2.18/Check { test: false }/TargetInner { ..: lib_target("native_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs", Edition2021) }
-   1.488634608s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="native_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/native-tls-c0a9a4303caca219/lib-native_tls`
+   4.825637629s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="native_tls"}: cargo::core::compiler::fingerprint: fingerprint error for native-tls v0.2.18/Check { test: false }/TargetInner { ..: lib_target("native_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/src/lib.rs", Edition2021) }
+   4.825737000s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="native_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/native-tls-c0a9a4303caca219/lib-native_tls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -265,8 +267,8 @@ Stack backtrace:
   32: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   33: <unknown>
-   1.491956690s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for native-tls v0.2.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/build.rs", Edition2021) }
-   1.492026173s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/native-tls-b8a5844f8652a137/run-build-script-build-script-build`
+   4.828311686s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for native-tls v0.2.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/native-tls-0.2.18/build.rs", Edition2021) }
+   4.828419724s  INFO prepare_target{force=false package_id=native-tls v0.2.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/native-tls-b8a5844f8652a137/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -322,8 +324,8 @@ Stack backtrace:
   34: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   35: <unknown>
-   1.492842957s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="build-script-main"}: cargo::core::compiler::fingerprint: fingerprint error for openssl-sys v0.9.111/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-main", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-sys-0.9.111/build/main.rs", Edition2021) }
-   1.492932273s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="build-script-main"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-sys-4c9ece50cef8b1b6/run-build-script-build-script-main`
+   4.832526293s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="build-script-main"}: cargo::core::compiler::fingerprint: fingerprint error for openssl-sys v0.9.111/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-main", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-sys-0.9.111/build/main.rs", Edition2021) }
+   4.833558764s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="build-script-main"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-sys-4c9ece50cef8b1b6/run-build-script-build-script-main`
 
 Caused by:
     No such file or directory (os error 2)
@@ -380,8 +382,8 @@ Stack backtrace:
   35: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   36: <unknown>
-   1.495361533s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="openssl"}: cargo::core::compiler::fingerprint: fingerprint error for openssl v0.10.75/Check { test: false }/TargetInner { ..: lib_target("openssl", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-0.10.75/src/lib.rs", Edition2021) }
-   1.495466515s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="openssl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-c3d2dbb4dd43e9b2/lib-openssl`
+   4.852961175s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="openssl"}: cargo::core::compiler::fingerprint: fingerprint error for openssl v0.10.75/Check { test: false }/TargetInner { ..: lib_target("openssl", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-0.10.75/src/lib.rs", Edition2021) }
+   4.853154806s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="openssl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-c3d2dbb4dd43e9b2/lib-openssl`
 
 Caused by:
     No such file or directory (os error 2)
@@ -436,8 +438,8 @@ Stack backtrace:
   33: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   34: <unknown>
-   1.498405817s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for openssl v0.10.75/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-0.10.75/build.rs", Edition2021) }
-   1.498450188s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-61b8c56313688480/run-build-script-build-script-build`
+   4.872433993s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for openssl v0.10.75/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-0.10.75/build.rs", Edition2021) }
+   4.872733884s  INFO prepare_target{force=false package_id=openssl v0.10.75 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-61b8c56313688480/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -494,8 +496,8 @@ Stack backtrace:
   35: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   36: <unknown>
-   1.499293713s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="openssl_sys"}: cargo::core::compiler::fingerprint: fingerprint error for openssl-sys v0.9.111/Check { test: false }/TargetInner { ..: lib_target("openssl_sys", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-sys-0.9.111/src/lib.rs", Edition2021) }
-   1.499332362s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="openssl_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-sys-47b6b7059e7631cb/lib-openssl_sys`
+   4.887998578s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="openssl_sys"}: cargo::core::compiler::fingerprint: fingerprint error for openssl-sys v0.9.111/Check { test: false }/TargetInner { ..: lib_target("openssl_sys", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/openssl-sys-0.9.111/src/lib.rs", Edition2021) }
+   4.888115412s  INFO prepare_target{force=false package_id=openssl-sys v0.9.111 target="openssl_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/openssl-sys-47b6b7059e7631cb/lib-openssl_sys`
 
 Caused by:
     No such file or directory (os error 2)
@@ -551,8 +553,8 @@ Stack backtrace:
   34: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   35: <unknown>
-   1.500830337s  INFO prepare_target{force=false package_id=tokio-native-tls v0.3.1 target="tokio_native_tls"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-native-tls v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tokio_native_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-native-tls-0.3.1/src/lib.rs", Edition2018) }
-   1.500870689s  INFO prepare_target{force=false package_id=tokio-native-tls v0.3.1 target="tokio_native_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/tokio-native-tls-2fc4208508b0b42d/lib-tokio_native_tls`
+   4.895193837s  INFO prepare_target{force=false package_id=tokio-native-tls v0.3.1 target="tokio_native_tls"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-native-tls v0.3.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tokio_native_tls", ["lib"], "/home/devops/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-native-tls-0.3.1/src/lib.rs", Edition2018) }
+   4.895274301s  INFO prepare_target{force=false package_id=tokio-native-tls v0.3.1 target="tokio_native_tls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/tokio-native-tls-2fc4208508b0b42d/lib-tokio_native_tls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -606,8 +608,8 @@ Stack backtrace:
   32: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   33: <unknown>
-   1.582647654s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint: fingerprint error for ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5)/Check { test: true }/TargetInner { name: "ordering", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/src/main.rs", Edition2024) }
-   1.582724580s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/ordering-d708f4e671673129/test-bin-ordering`
+   5.228111932s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint: fingerprint error for ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5)/Check { test: true }/TargetInner { name: "ordering", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/src/main.rs", Edition2024) }
+   5.228610510s  INFO prepare_target{force=false package_id=ordering v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5) target="ordering"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/test-2-5/target/debug/.fingerprint/ordering-d708f4e671673129/test-bin-ordering`
 
 Caused by:
     No such file or directory (os error 2)
