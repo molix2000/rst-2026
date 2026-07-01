@@ -4,10 +4,13 @@
 
 
 1 -</p>
+
 ```
+   
    &self
 
 ```
+   
    When using &self , you are telling the  compiler that method only needs to read data from the struct, not change it, once read only, multiple parts of your code can call this method. at the exact same time. without causing data conflicts.
 
   * Use case, Getteers, calculateing a value, printing status, or checking a condition.
@@ -31,10 +34,13 @@
     }
 
 ```
+
    and
 
 2-</p>
+
 ```
+   
    &mut self
 
 ```
@@ -82,3 +88,16 @@ If you try &mut self whilst anther part of the code is holding reference to the 
 
 What about just: self
 If a method takes self only (without the &), this means that method takes total ownership of the object. Once that method finishes, the object is destoryed, (dropped). and can never be used again. This is common for conversationmethods. like .ino_string().
+
+## This is the diagram for struct01.rs, to help give more visual representaion
+
+```
+flowchart TD
+    A["Start"] --> B["Define Rectangle struct with width and height"]
+    B --> C["Instantiate rect1 with width=44 and height=31"]
+    C --> D[[ "Call rect1.run(12, 33)" ]]
+    D --> E["Print rect1 debug output"]
+    E --> F["Print rect1 run result"]
+    F --> G["End"]
+
+```
