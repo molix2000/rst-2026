@@ -10,7 +10,7 @@ pub fn area_calc() {
     println!("The area2 of the rectangle is {}", area2(rect1));
 }
 
- pub fn area(height: u32, width: u32) -> u32 {
+pub fn area(height: u32, width: u32) -> u32 {
     height * width
 }
 
