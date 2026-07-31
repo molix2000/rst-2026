@@ -17,7 +17,12 @@ impl WriteMessage {
     }
 }
 
+impl QuitMessages {
 
+    fn call_quit (&self) {
+          let m = WriteMessage.messagewrite();
+    }
+}
 
 fn main() {
 
@@ -25,6 +30,8 @@ fn main() {
    let msgw = WriteMessage ;
    let msg1 = "This is life".to_string();
    println!("This is the output of WriteMessage {}", msgw.messagewrite());
+   let qmsq = QuitMessages;
+    qmsq.call_quit();
 }
 
 
