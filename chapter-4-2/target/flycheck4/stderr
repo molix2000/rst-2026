@@ -1,7 +1,7 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-   0.312547639s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2)/Check { test: false }/TargetInner { name: "chapter-4-2", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/src/main.rs", Edition2024) }
-   0.312615899s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/target/debug/.fingerprint/chapter-4-2-2e9d6b3a72ee2fc7/bin-chapter-4-2`
+   0.158313651s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2)/Check { test: false }/TargetInner { name: "chapter-4-2", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/src/main.rs", Edition2024) }
+   0.158360855s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/target/debug/.fingerprint/chapter-4-2-2e9d6b3a72ee2fc7/bin-chapter-4-2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -51,8 +51,8 @@ Stack backtrace:
   28: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:360:3
   29: <unknown>
-   0.757627506s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2)/Check { test: true }/TargetInner { name: "chapter-4-2", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/src/main.rs", Edition2024) }
-   0.757811360s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/target/debug/.fingerprint/chapter-4-2-b5d31cda7a0486b5/test-bin-chapter-4-2`
+   1.571477801s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint: fingerprint error for chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2)/Check { test: true }/TargetInner { name: "chapter-4-2", doc: true, ..: with_path("/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/src/main.rs", Edition2024) }
+   1.571514135s  INFO prepare_target{force=false package_id=chapter-4-2 v0.1.0 (/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2) target="chapter-4-2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/devops/Documents/Other-Pi/Documents/source-code/rst-2026/chapter-4-2/target/debug/.fingerprint/chapter-4-2-b5d31cda7a0486b5/test-bin-chapter-4-2`
 
 Caused by:
     No such file or directory (os error 2)
