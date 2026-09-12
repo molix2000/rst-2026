@@ -1,4 +1,4 @@
-pub fn area_calc() {
+pub fn main() {
     println!("This is the area calculator segment");
     let width1 = 30;
     let height1 = 30;

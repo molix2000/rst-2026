@@ -41,5 +41,6 @@ fn main() {
     println!("The road Block from the R401 is {:#?}", block_to_road(Road::R401(Block::A1b)));
     println!("The road Block from the R338 is {:#?}", block_to_road(Road::R338(Block::A2a)));
     println!("The road Block from the R886 is {:#?}", block_to_road(Road::R886(Block::C3g)));
-    println!("The road Block from the R609 is {:#?}", block_to_road(Road::R609(Block::K4z)));
+    println!("The road Block from the R886 is {:#?}", block_to_road(Road::R886(Block)));
+    // println!("The road Block from the R609 is {:#?}", block_to_road(Road::R609(Block::K4z)));
 }
